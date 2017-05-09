@@ -1,0 +1,17 @@
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+
+// custom styles
+@import "partials/colors";
+@import "partials/mixins";
+@import "partials/typography";
+@import "partials/icons";
+@import "partials/global";
+@import "partials/buttons";
+@import "partials/nav";
+@import "partials/footer";
+@import "partials/forms";
+@import "partials/funk";
+@import "pages/index";
+
