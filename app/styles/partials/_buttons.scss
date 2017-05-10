@@ -10,6 +10,10 @@
 	letter-spacing: 1px;
 	margin-left: 15px;
 	padding: 5px 35px 5px 35px;
+
+	&.wai-nav-btn-green {
+		background: $green;
+	}
 }
 // form button
 .wai-btn {

@@ -43,7 +43,7 @@ var __slice = [].slice;
 
             _results = [];
             for (_i = 1, _ref = this.options.numStars; 1 <= _ref ? _i <= _ref : _i >= _ref; 1 <= _ref ? _i++ : _i--) {
-                _results.push(this.$el.append("<i class='fa fa-star-o'></i>"));
+                _results.push(this.$el.append('<i class=\'fa fa-star-o\'></i>'));
             }
             return _results;
         };
@@ -100,7 +100,7 @@ var __slice = [].slice;
 })(window.jQuery, window);
 
 $(function() {
-    return $(".starrr").starrr();
+    return $('.starrr').starrr();
 });
 
 $( document ).ready(function() {
