@@ -1,0 +1,122 @@
+/////// Hero ////////
+.hero {
+    background-color: $pink;
+    height: 550px;
+    font-family: 'ceragr-blackuploaded_file'; 
+    margin-bottom: 50px;
+
+    &.package-hero {
+    	background: $green;
+    	h1 {
+    		margin-left: -5px;
+    		padding-top: 75px;
+    	}
+    }
+    h1 {
+    	padding-top: 200px;
+    }
+}
+
+//////// Form ////////
+.package-card {
+	border: none;
+	border-radius: 10px;
+	box-shadow: 4px 4px 20px #C0C0C0;
+
+	.package-form {
+		padding-top: 20px;
+
+		.package-select {
+			height: 45px;
+			width: 90%;
+			background: #F0F0F0;
+			border: none;
+			color: grey;
+			font-family: 'lato', sans-serif;
+			font-size: 14px;
+		}
+	}
+
+	h1 {
+		color: $pink;
+		font-family: 'lato', sans-serif;
+		font-weight: 700;
+
+		small {
+			font-size: 20px;
+			font-weight: 700;
+		}
+	}
+
+	h2 {
+		padding-top: 10px;
+	}
+
+	h6 {
+		font-family: 'lato', sans-serif;
+		font-size: 13px;
+		padding-bottom: 20px;
+	}
+
+	.form-png {
+		padding: 20px 0 30px 0;
+	}
+}
+
+//////// Your party ////////
+.your-party {
+		display: inline-block;
+		padding: 40px;
+		width: 60vw;
+
+
+	h1 {
+		font-size: 28px;
+		padding-top: 40px;
+		padding-bottom: 30px;
+	}
+
+	h6 {
+		color: $pink;
+		font-family: 'lato', sans-serif;
+	}
+
+	//////// Cards ////////
+
+	.card {
+		border: none;
+		padding-bottom: 20px;
+
+		.card-block {
+			padding: 0;
+		}
+
+		h2 {
+			color: $pink;
+			font-family: 'ceragr-blackuploaded_file'; 
+			font-size: 19px;
+			margin-top: 15px;
+			margin-bottom: 0;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-family: 'lato', sans-serif;
+			font-size: 12px;
+			font-weight: 800;
+			margin-top: 5px;
+			text-transform: uppercase;
+		}
+
+		.star-cust {
+			color: $yellow;
+		}
+	}
+}
+
+//////// Includes ////////
+.party-includes {
+		background: $purple;
+		display: inline-block;
+		height: 100%;
+}
