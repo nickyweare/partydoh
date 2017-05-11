@@ -110,6 +110,19 @@
 
 		.star-cust {
 			color: $yellow;
+			padding-left: 40px;
+		}
+	}
+
+	.summary {
+		h2 {
+			font-size: 19px;
+			font-weight: 300;
+			padding: 20px 0 20px 0;;
+		}
+
+		p {
+			
 		}
 	}
 }
@@ -118,5 +131,8 @@
 .party-includes {
 		background: $purple;
 		display: inline-block;
-		height: 100%;
+		padding: 40px;
+		height: 125vw;
+		width: 38vw;
+		vertical-align: top;
 }
