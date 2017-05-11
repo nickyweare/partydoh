@@ -65,10 +65,11 @@
 
 //////// Your party ////////
 .your-party {
-		display: inline-block;
-		padding: 40px;
-		width: 60vw;
-
+		padding: 40px 0 0 40px;
+	
+	.col-padding {
+		padding-right: 60px;
+	}
 
 	h1 {
 		font-size: 28px;
@@ -91,6 +92,10 @@
 			padding: 0;
 		}
 
+		img {
+			width: 100%;
+		}
+
 		h2 {
 			color: $pink;
 			font-family: 'ceragr-blackuploaded_file'; 
@@ -110,7 +115,6 @@
 
 		.star-cust {
 			color: $yellow;
-			padding-left: 40px;
 		}
 	}
 
@@ -122,18 +126,11 @@
 		}
 
 		p {
-			
+			// padding-bottom: 40px;
 		}
 	}
-}
 
-//////// Includes ////////
-.party-includes {
+	.block {
 		background: $purple;
-		display: inline-block;
-		padding: 40px;
-		overflow: hidden;
-		height: 125vw;
-		width: 35%;
-		vertical-align: top;
+	}
 }
