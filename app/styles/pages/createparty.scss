@@ -1,6 +1,6 @@
 //////// Your party ////////
-.your-party {
-		padding: 40px 0 0 40px;
+.create-party {
+		padding: 0 0 0 40px;
 	
 	.col-padding {
 		padding-right: 60px;
@@ -17,8 +17,12 @@
 		font-family: 'lato', sans-serif;
 	}
 
-	//////// Cards ////////
+	//////// Venues carousel ////////
+	.venues {
+		
+	}
 
+	//////// Cards ////////
 	.card {
 		border: none;
 		padding-bottom: 20px;
@@ -67,5 +71,6 @@
 
 	.block {
 		background: $purple;
+		z-index: -1;
 	}
 }
