@@ -27,31 +27,22 @@
         <!--[if IE]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <section class="wai-nav">
-            <div class="container-fluid sticky-top">
-                <div class="row">
-                    <div class="col-2">
-                        <img src="images/partydoh-logo.svg" class="logo" width="100px" />
-                    </div>
-                    <div class="col-10">
-                        <ul class="nav justify-content-end align-middle">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/packpage.html">build your party</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">invites</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">contact</a>
-                            </li>
-                            <li>
-                                <button type="button" class="btn wai-nav-btn">Login</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
+        <nav class="wai-nav">
+            <div class="wai-nav-logo">
+                <img src="images/partydoh-logo.svg" width="100px" height="auto">
             </div>
-        </section>
+            <ul class="wai-nav-list">
+                <li><a href="#!">Build your party</a></li>
+                <li><a href="#!">Invites</a></li>
+                <li><a href="#!">Contact</a></li>
+                <li><a class="wai-btn-nav" href="#!">Login</a></li>
+            </ul>
+            <div class="wai-nav-icon">
+                <a href="#!"><img src="images/wai-nav-icon.svg" width="30px" height="30px" /></a>
+            </div>
+        </nav>
+
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title text-center">kapop!</h1>
@@ -81,6 +72,7 @@
                 </div>
             </div>
         </section>
+
         <section class="party-packages">
             <div class="container">
                 <h2 class="hero-sub hero-sub-pink packages-head">Hand picked party packages</h2>
@@ -993,6 +985,7 @@ ga('create','UA-XXXXX-X');ga('send','pageview');
 <!-- endbuild -->
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
+<script src="scripts/wai-nav.js"></script>
 <script src="scripts/stars.js"></script>
 <!-- <script src="scripts/carousel.js"></script> -->
 <!-- endbuild -->
