@@ -18,6 +18,8 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
         <!-- font awesome api -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- flickety carousel css -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="/bower_components/modernizr/modernizr.js"></script>
@@ -27,7 +29,7 @@
         <!--[if IE]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <section class="wai-nav">
+        <!-- <section class="wai-nav">
             <div class="container-fluid sticky-top">
                 <div class="row">
                     <div class="col-2">
@@ -51,7 +53,24 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
+
+        <nav class=“wai-nav”>
+            <div class=“wai-nav-logo”>
+                <img src=“images/partydoh-logo.svg” width=“100px” height=“auto”>
+            </div>
+            <ul class=“wai-nav-list”>
+                <li><a href=“#!“>Build your party</a></li>
+                <li><a href=“#!“>Invites</a></li>
+                <li><a href=“#!“>Contact</a></li>
+                <li><a class=“wai-btn-nav” href=“#!“>Login</a></li>
+            </ul>
+            <div class=“wai-nav-icon”>
+                <a href=“#!“><img src=“images/wai-nav-icon.svg” width=“30px” height=“30px” /></a>
+            </div>
+        </nav>
+
+        
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title text-center">kapop!</h1>
@@ -81,6 +100,166 @@
                 </div>
             </div>
         </section>
+        <!-- Flickity HTML init -->
+        <div class="flickety">
+        <h1 class="hero-sub hero-sub-pink packages-head">Hand picked party packages</h1>
+            <div class="carousel" data-flickity='{ "groupCells": true, "wrapAround": true, "pageDots": false }'>
+                <div class="carousel-cell">
+                    <a href="http://placehold.it"><img src="http://placehold.it/300x300" class="d-block img-fluid"></a>
+                    <h2 class="card-title packages">the wild wild west <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                    <div class="row">
+                        <div class="col">
+                            <h4>From</h4>
+                            <h3>£260</h3>
+                        </div>
+                        <div class="col">
+                            <h5 class="text-muted text-right">56</h5>
+                            <h6 class="text-muted text-right">Parties booked</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <a href="http://placehold.it"><img src="http://placehold.it/300x300" class="d-block img-fluid"></a>
+                    <h2 class="card-title packages">pirate adventure <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                    <div class="row">
+                        <div class="col">
+                            <h4>From</h4>
+                            <h3>£210</h3>
+                        </div>
+                        <div class="col">
+                            <h5 class="text-muted text-right">84</h5>
+                            <h6 class="text-muted text-right">Parties booked</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <a href="http://placehold.it"><img src="http://placehold.it/300x300" class="d-block img-fluid"></a>
+                    <h2 class="card-title packages">super hero mission <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                    <div class="row">
+                        <div class="col">
+                            <h4>From</h4>
+                            <h3>£245</h3>
+                        </div>
+                        <div class="col">
+                            <h5 class="text-muted text-right">123</h5>
+                            <h6 class="text-muted text-right">Parties booked</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <a href="http://placehold.it"><img src="http://placehold.it/300x300" class="d-block img-fluid"></a>
+                    <h2 class="card-title packages">the wild wild west <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                    <div class="row">
+                        <div class="col">
+                            <h4>From</h4>
+                            <h3>£260</h3>
+                        </div>
+                        <div class="col">
+                            <h5 class="text-muted text-right">56</h5>
+                            <h6 class="text-muted text-right">Parties booked</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <a href="http://placehold.it"><img src="http://placehold.it/300x300" class="d-block img-fluid"></a>
+                    <h2 class="card-title packages">pirate adventure <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                    <div class="row">
+                        <div class="col">
+                            <h4>From</h4>
+                            <h3>£210</h3>
+                        </div>
+                        <div class="col">
+                            <h5 class="text-muted text-right">84</h5>
+                            <h6 class="text-muted text-right">Parties booked</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <a href="http://placehold.it"><img src="http://placehold.it/300x300" class="d-block img-fluid"></a>
+                    <h2 class="card-title packages">super hero mission <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                    <div class="row">
+                        <div class="col">
+                            <h4>From</h4>
+                            <h3>£245</h3>
+                        </div>
+                        <div class="col">
+                            <h5 class="text-muted text-right">123</h5>
+                            <h6 class="text-muted text-right">Parties booked</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <a href="http://placehold.it"><img src="http://placehold.it/300x300" class="d-block img-fluid"></a>
+                    <h2 class="card-title packages">the wild wild west <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                    <div class="row">
+                        <div class="col">
+                            <h4>From</h4>
+                            <h3>£260</h3>
+                        </div>
+                        <div class="col">
+                            <h5 class="text-muted text-right">56</h5>
+                            <h6 class="text-muted text-right">Parties booked</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <a href="http://placehold.it"><img src="http://placehold.it/300x300" class="d-block img-fluid"></a>
+                    <h2 class="card-title packages">pirate adventure <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                    <div class="row">
+                        <div class="col">
+                            <h4>From</h4>
+                            <h3>£210</h3>
+                        </div>
+                        <div class="col">
+                            <h5 class="text-muted text-right">84</h5>
+                            <h6 class="text-muted text-right">Parties booked</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <a href="http://placehold.it"><img src="http://placehold.it/300x300" class="d-block img-fluid"></a>
+                    <h2 class="card-title packages">super hero mission <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                    <div class="row">
+                        <div class="col">
+                            <h4>From</h4>
+                            <h3>£245</h3>
+                        </div>
+                        <div class="col">
+                            <h5 class="text-muted text-right">123</h5>
+                            <h6 class="text-muted text-right">Parties booked</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <a href="http://placehold.it"><img src="http://placehold.it/300x300" class="d-block img-fluid"></a>
+                    <h2 class="card-title packages">the wild wild west <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                    <div class="row">
+                        <div class="col">
+                            <h4>From</h4>
+                            <h3>£260</h3>
+                        </div>
+                        <div class="col">
+                            <h5 class="text-muted text-right">56</h5>
+                            <h6 class="text-muted text-right">Parties booked</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <a href="http://placehold.it"><img src="http://placehold.it/300x300" class="d-block img-fluid"></a>
+                    <h2 class="card-title packages">pirate adventure <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                    <div class="row">
+                        <div class="col">
+                            <h4>From</h4>
+                            <h3>£210</h3>
+                        </div>
+                        <div class="col">
+                            <h5 class="text-muted text-right">84</h5>
+                            <h6 class="text-muted text-right">Parties booked</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section class="party-packages">
             <div class="container">
                 <h2 class="hero-sub hero-sub-pink packages-head">Hand picked party packages</h2>
@@ -963,6 +1142,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
 (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l4function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

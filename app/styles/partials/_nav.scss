@@ -1,24 +1,110 @@
-.wai-nav {
-	.logo {
-		margin-top: -10px;
-	}
-	font-family: 'ceragr-blackuploaded_file';
-	padding: 40px 20px 30px 20px;
-	background-color: $pink;
-	font-size: 12px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: white;
+// .wai-nav {
+// 	.logo {
+// 		margin-top: -10px;
+// 	}
+// 	font-family: 'ceragr-blackuploaded_file';
+// 	padding: 40px 20px 30px 20px;
+// 	background-color: $pink;
+// 	font-size: 12px;
+// 	text-transform: uppercase;
+// 	letter-spacing: 1px;
+// 	color: white;
 
-	&.wai-nav-green {
-		background-color: $green;
-	}
+// 	&.wai-nav-green {
+// 		background-color: $green;
+// 	}
 
-	&.wai-nav-yellow {
-		background-color: $yellow;
-	}
-	a {
-		color: white;
-		margin-right: 20px;
-	}
+// 	&.wai-nav-yellow {
+// 		background-color: $yellow;
+// 	}
+// 	a {
+// 		color: white;
+// 		margin-right: 20px;
+// 	}
+// }
+
+nav.wai-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    padding: 0 40px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: $pink;
+    font-family: ‘ceragr-blackuploaded_file’;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    @include media-breakpoint-down(sm) {
+        display: block;
+        padding: 0;
+    }
+    .wai-nav-logo {
+        @include media-breakpoint-down(sm) {
+            overflow: hidden;
+            padding: 18px 0 18px 40px;
+        }
+    }
+    ul.wai-nav-list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        li {
+            display: flex;
+            list-style: none;
+            margin-left: 20px;
+            a {
+                color: white;
+                letter-spacing: 2px;
+                display: flex;
+                align-items: center;
+                @include transition(all .3s ease);
+                &.wai-btn-nav {
+                    display: block;
+                    padding: 8px 12px;
+                    border: 2px solid white;
+                    text-align: center;
+                    min-width: 140px;
+                    border-radius: 100px;
+                    &:hover {
+                        background: $purple;
+                        color: white;
+                    }
+                    @include media-breakpoint-down(sm) {
+                        margin: 20px 40px;
+                    }
+                }
+                @include media-breakpoint-down(sm) {
+                    display: block;
+                    width: 100%;
+                    padding: 25px 40px;
+                    font-size: 16px;
+                    border-bottom: 1px solid darken($purple, 10%);
+
+                }
+                &:hover {
+                    text-decoration: none;
+                    color: $yellow;
+                }
+            }
+            @include media-breakpoint-down(sm) {
+                margin-left: 0;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            display: none;
+            background-color: $purple;
+        }
+    }
+    .wai-nav-icon {
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        display: none;
+        @include media-breakpoint-down(sm) {
+            display: block;
+        }
+    }
 }
