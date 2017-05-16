@@ -1,0 +1,584 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Partydoh</title>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- google font api -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+        <!-- font awesome api -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="/bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if IE]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <section class="wai-nav wai-nav-green wai-nav-yellow">
+            <div class="container-fluid sticky-top">
+                <div class="row">
+                    <div class="col-2">
+                        <a href="/index.html">
+                            <img src="images/partydoh-logo.svg" class="logo" width="100px" />
+                        </a>
+                    </div>
+                    <div class="col-10">
+                        <ul class="nav justify-content-end align-middle">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">build your party</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">invites</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">contact</a>
+                            </li>
+                            <li>
+                                <button type="button" class="btn wai-nav-btn wai-nav-btn-green wai-nav-btn-yellow">Login</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero packpage-hero create-party-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="hero-title">build your party</h1>
+                        <h2 class="hero-sub hero-sub-yellow">the perfect party for kids with</br> super powers</h2>
+                    </div>
+                    <div class="col">
+                        <div class="card package-card text-center">
+                            <div class="card-block">
+                                <h2 class="hero-sub hero-sub-pink">Book your party now</h2>
+                                <div class="package-form">
+                                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0 package-select" id="inlineFormCustomSelect">
+                                        <option selected>Select venue</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="package-form">
+                                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0 package-select" id="inlineFormCustomSelect">
+                                        <option selected>Number of guests</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="package-form">
+                                    <div class="row">
+                                        <div class="col">
+                                            <select class="custom-select mini-select mb-2 mr-sm-2 mb-sm-0 package-select" id="inlineFormCustomSelect">
+                                                <option selected>Preferred date of party</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                        <div class="col">
+                                            <select class="custom-select mini-select mb-2 mr-sm-2 mb-sm-0 package-select" id="inlineFormCustomSelect">
+                                                <option selected>Preferred date of party</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-start">
+                                    <div class="col-4">
+                                        <h6 class="text-muted text-right" id="from">From</h6>
+                                    </div>
+                                    <div class="col-4">
+                                        <h1><small>£</small>365</h1>
+                                    </div>
+                                </div>
+                                <h6 class="text-muted">Total price</h6>
+                                <button type="submit" class="btn wai-btn">book hero party package</button>
+                                <div class="form-png">
+                                    <img src="images/trustpilot.png" class="logo" width="50px" />
+                                    <img src="images/ofsted.png" class="logo" width="50px" />
+                                    <img src="images/ssl-image.png" class="logo" width="50px" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="create-party">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-8">
+                        <h1>Choose a venue near you</h1>
+                        <div class="venue">
+                            <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active justify-content-center">
+                                        <div class="row">
+                                            <div class="col-xs col-sm col-md-6">
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x250" class="d-block img-fluid">
+                                                            <h6>Day hire</h6>
+                                                            <h4>£120</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">alpha hotel</h2>
+                                                        <p class="card-text">145 shoreditch high street, london e1 6je</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x250" class="d-block img-fluid">
+                                                            <h6>Day hire</h6>
+                                                            <h4>£165</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">play experience uk</h2>
+                                                        <p class="card-text">112-114 park lane, highgrove a32 6yu</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs col-sm col-md-6">
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x250" class="d-block img-fluid">
+                                                            <h6>Day hire</h6>
+                                                            <h4>£180</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">jazz cafe <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                                                        <p class="card-text">11 east road, lane alley bh2 8je</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x250" class="d-block img-fluid">
+                                                            <h6>Day hire</h6>
+                                                            <h4>£110</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">atlantic market</h2>
+                                                        <p class="card-text">145 shoreditch high street, london e1 6je</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="http://placehold.it/350x200" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="http://placehold.it/350x200" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="icon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="icon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h1>Select a food and drink package</h1>
+                        <div class="food-drink">
+                            <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active justify-content-center">
+                                        <div class="row">
+                                            <div class="col-xs col-sm col-md-6">
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x250" class="d-block img-fluid">
+                                                            <h4>£120</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">sweet treats <span id="stars-existing" class="starrr star-cust text-align-right" data-rating='4'></span></h2>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x250" class="d-block img-fluid">
+                                                            <h4>£160</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">the works <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs col-sm col-md-6">
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x250" class="d-block img-fluid">
+                                                            <h4>£90</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">full of energy <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x250" class="d-block img-fluid">
+                                                            <h4>£170</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">sit down brunch <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="http://placehold.it/350x200" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="http://placehold.it/350x200" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="icon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="icon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h1>Choose your incredible entertainment</h1>
+                        <div class="entertainment">
+                            <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active justify-content-center">
+                                        <div class="row">
+                                            <div class="col-xs col-sm col-md-6">
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x350" class="d-block img-fluid">
+                                                            <h6>3 hours</h6>
+                                                            <h4>£120</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">pirate adventure</h2>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <p class="card-text">6-12 YEARS </p>
+                                                            </div>
+                                                            <div class="col">
+                                                                <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x350" class="d-block img-fluid">
+                                                            <h6>1 hour</h6>
+                                                            <h4>£120</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">climbing wall</h2>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <p class="card-text">6-12 YEARS </p>
+                                                            </div>
+                                                            <div class="col">
+                                                                <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs col-sm col-md-6">
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x350" class="d-block img-fluid">
+                                                            <h6>2 hours</h6>
+                                                            <h4>£120</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">dr wizz-bang</h2>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <p class="card-text">6-12 YEARS </p>
+                                                            </div>
+                                                            <div class="col">
+                                                                <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x350" class="d-block img-fluid">
+                                                            <h6>4 hours</h6>
+                                                            <h4>£120</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">theatre experience</h2>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <p class="card-text">6-12 YEARS </p>
+                                                            </div>
+                                                            <div class="col">
+                                                                <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="http://placehold.it/350x200" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="http://placehold.it/350x200" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="icon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="icon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h1>Make it pop with some decoration</h1>
+                        <div class="decoration">
+                            <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active justify-content-center">
+                                        <div class="row">
+                                            <div class="col-xs col-sm col-md-6">
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x250" class="d-block img-fluid">
+                                                            <h4>£120</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">garden party <span id="stars-existing" class="starrr star-cust text-align-right" data-rating='4'></span></h2>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x250" class="d-block img-fluid">
+                                                            <h4>£40</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">robots <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs col-sm col-md-6">
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x250" class="d-block img-fluid">
+                                                            <h4>£10</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">balloons <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x250" class="d-block img-fluid">
+                                                            <h4>£30</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">classic <span id="stars-existing" class="starrr star-cust" data-rating='4'></span></h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="http://placehold.it/350x200" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="http://placehold.it/350x200" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="icon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="icon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h1>Make it memorable</h1>
+                        <div class="memerable">
+                            <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active justify-content-center">
+                                        <div class="row">
+                                            <div class="col-xs col-sm col-md-6">
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x250" class="d-block img-fluid">
+                                                            <h4>£120</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">photographer</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs col-sm col-md-6">
+                                                <div class="card">
+                                                    <a href="http://placehold.it">
+                                                        <div class="img-wrapper">
+                                                            <img src="http://placehold.it/350x250" class="d-block img-fluid">
+                                                            <h4>£190</h4>
+                                                        </div>
+                                                    </a>
+                                                    <div class="card-block">
+                                                        <h2 class="card-title packages">videographer</h2>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="http://placehold.it/350x200" alt="Second slide">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="http://placehold.it/350x200" alt="Third slide">
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="icon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="icon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 block">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <hr>
+            <div class="footer">
+                <img src="images/trustpilot.png" class="logo" width="100px" />
+                <img src="images/ofsted.png" class="logo" width="100px" />
+                <img src="images/ssl-image.png" class="logo" width="100px" />
+            </div>
+            <div class="foot-nav">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active text-muted" href="#">&copy; Party Doh 2017</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#">Terms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#">Suppliers</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l4function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/tether/dist/js/tether.js"></script>
+        <script src="/bower_components/modernizr/modernizr.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:js scripts/plugins.js -->
+        <script src="/bower_components/bootstrap/js/dist/util.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/button.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+        <!-- endbuild -->
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/stars.js"></script>
+        <!-- <script src="scripts/carousel.js"></script> -->
+        <!-- endbuild -->
+    </body>
+</html>
