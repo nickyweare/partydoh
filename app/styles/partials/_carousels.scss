@@ -1,12 +1,12 @@
 .flickety {
-	padding: 40px 40px 40px 40px;
+	padding: 40px 20px 40px 20px;
 
 	@include media-breakpoint-up(md) {
-		padding: 40px 80px 40px 80px
+		padding: 20px 20px 20px 20px
 	}
 
 	@include media-breakpoint-up(lg) {
-		padding: 40px 120px 40px 120px
+		padding: 20px 20px 20px 20px
 	}
 
 	/* external css: flickity.css */
@@ -70,6 +70,16 @@
 		font-size: 12px;
 	}
 
+	p {
+		color: black;
+		font-family: 'lato', sans-serif;
+		font-size: 12px;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin-bottom: 0;
+
+	}
+
 	* { box-sizing: border-box; }
 
 	// body {}
@@ -78,6 +88,39 @@
 		width: 100%;
 		height: 60%;
 		margin: auto;
+	}
+
+	.img-wrapper {
+   		position: relative;
+
+   		h6 {
+		font-family: 'ceragr-blackuploaded_file';
+		font-size: 13px;
+		font-weight: 200;
+		color: white;
+		position: absolute;
+   		bottom: 50px;
+   		left: 20px;
+   		@media (max-width: 768px) {
+			position: absolute;
+	   		bottom: 45px;
+	   		left: 20px;
+			}
+		}
+
+		h4 {
+			color: white;
+			font-size: 30px;
+			font-weight: 900;
+			position: absolute;
+	   		bottom: 15px;
+	   		left: 20px;
+	   		@media (max-width: 768px) {
+				position: absolute;
+		   		bottom: 15px;
+		   		left: 20px;
+			}
+		}
 	}
 
 	.carousel {
@@ -89,6 +132,9 @@
 	  margin-right: 10px;
 	  border-radius: 5px;
 	  counter-increment: carousel-cell;
+	  @include media-breakpoint-up(lg) {
+			height: 350px; 
+		}
 	}
 
 	.carousel-cell.is-selected {

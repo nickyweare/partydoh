@@ -4,24 +4,23 @@
     height: 550px;
     font-family: 'ceragr-blackuploaded_file'; 
     margin-bottom: 50px;
-
     &.packpage-hero {
     	background: $green;
+        padding-top: 100px;
+        margin-bottom: 100px;
     	h1 {
     		margin-left: -5px;
     		padding-top: 75px;
     	}
-
         #from {
             padding-top: 75px;
         }
     }
-
     &.create-party-hero {
         background: $yellow;
+        height: 650px;
         margin-bottom: 0;
     }
-
     h1 {
     	padding-top: 200px;
     }

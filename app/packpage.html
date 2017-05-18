@@ -27,33 +27,21 @@
         <!--[if IE]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <section class="wai-nav wai-nav-green">
-            <div class="container-fluid sticky-top">
-                <div class="row">
-                    <div class="col-2">
-                        <a href="/index.html">
-                            <img src="images/partydoh-logo.svg" class="logo" width="100px" />
-                        </a>
-                    </div>
-                    <div class="col-10">
-                        <ul class="nav justify-content-end align-middle">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/createparty.html">build your party</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">invites</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">contact</a>
-                            </li>
-                            <li>
-                                <button type="button" class="btn wai-nav-btn wai-nav-btn-green">Login</button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <nav class="wai-nav wai-nav-green">
+            <div class="wai-nav-logo">
+                <img src="images/partydoh-logo.svg" width="100px" height="auto">
             </div>
-        </section>
+            <ul class="wai-nav-list">
+                <li><a href="/packpage.html">Build your party</a></li>
+                <li><a href="#!">Invites</a></li>
+                <li><a href="#!">Contact</a></li>
+                <li><a class="wai-btn-nav" href="#!">Login</a></li>
+            </ul>
+            <div class="wai-nav-icon">
+                <a href="#!"><img src="images/wai-nav-icon.svg" width="30px" height="30px" /></a>
+            </div>
+        </nav>
+        <!-- Packpage hero -->
         <section class="hero packpage-hero">
             <div class="container">
                 <div class="row">
@@ -110,347 +98,247 @@
                 </div>
             </div>
         </section>
-        <section class="venues">
-            <div class="container venues-carousel">
-                <h2 class="hero-sub hero-sub-pink packages-head">Choose your venue</h2>
-                <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active justify-content-center">
-                            <div class="row">
-                                <div class="col-xs col-sm col-md-3">
-                                    <div class="card">
-                                        <a href="http://placehold.it">
-                                            <div class="img-wrapper">
-                                                <img src="http://placehold.it/250x170" class="d-block img-fluid">
-                                            </div>
-                                        </a>
-                                        <div class="card-block">
-                                            <h2 class="card-title packages">alpha hotel</h2>
-                                            <p class="card-text">145 shoreditch high street, london e1 6je</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs col-sm col-md-3">
-                                    <div class="card">
-                                        <a href="http://placehold.it">
-                                            <div class="img-wrapper">
-                                                <img src="http://placehold.it/250x170" class="d-block img-fluid">
-                                            </div>
-                                        </a>
-                                        <div class="card-block">
-                                            <h2 class="card-title packages">jazz cafe</h2>
-                                            <p class="card-text">11 east road, lane alley bh2 8je</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs col-sm col-md-3">
-                                    <div class="card">
-                                        <a href="http://placehold.it">
-                                            <div class="img-wrapper">
-                                                <img src="http://placehold.it/250x170" class="d-block img-fluid">
-                                            </div>
-                                        </a>
-                                        <div class="card-block">
-                                            <h2 class="card-title packages">play experience uk</h2>
-                                            <p class="card-text">112-114 park lane, highgrove a32 6yu</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs col-sm col-md-3">
-                                    <div class="card">
-                                        <a href="http://placehold.it">
-                                            <div class="img-wrapper">
-                                                <img src="http://placehold.it/250x170" class="d-block img-fluid">
-                                            </div>
-                                        </a>
-                                        <div class="card-block">
-                                            <h2 class="card-title packages">atlantic market</h2>
-                                            <p class="card-text">11 east road, lane alley bh2 8je</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item justify-content-center">
-                            <div class="row">
-                                <div class="col-xs col-sm col-md-3">
-                                    <div class="card">
-                                        <a href="http://placehold.it">
-                                            <div class="img-wrapper">
-                                                <img src="http://placehold.it/250x170" class="d-block img-fluid">
-                                            </div>
-                                        </a>
-                                        <div class="card-block">
-                                            <h2 class="card-title packages">alpha hotel</h2>
-                                            <p class="card-text">145 shoreditch high street, london e1 6je</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs col-sm col-md-3">
-                                    <div class="card">
-                                        <a href="http://placehold.it">
-                                            <div class="img-wrapper">
-                                                <img src="http://placehold.it/250x170" class="d-block img-fluid">
-                                            </div>
-                                        </a>
-                                        <div class="card-block">
-                                            <h2 class="card-title packages">jazz cafe</h2>
-                                            <p class="card-text">11 east road, lane alley bh2 8je</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs col-sm col-md-3">
-                                    <div class="card">
-                                        <a href="http://placehold.it">
-                                            <div class="img-wrapper">
-                                                <img src="http://placehold.it/250x170" class="d-block img-fluid">
-                                            </div>
-                                        </a>
-                                        <div class="card-block">
-                                            <h2 class="card-title packages">play experience uk</h2>
-                                            <p class="card-text">112-114 park lane, highgrove a32 6yu</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs col-sm col-md-3">
-                                    <div class="card">
-                                        <a href="http://placehold.it">
-                                            <div class="img-wrapper">
-                                                <img src="http://placehold.it/250x170" class="d-block img-fluid">
-                                            </div>
-                                        </a>
-                                        <div class="card-block">
-                                            <h2 class="card-title packages">atlantic market</h2>
-                                            <p class="card-text">11 east road, lane alley bh2 8je</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item justify-content-center">
-                            <div class="row">
-                                <div class="col-xs col-sm col-md-3">
-                                    <div class="card">
-                                        <a href="http://placehold.it">
-                                            <div class="img-wrapper">
-                                                <img src="http://placehold.it/250x170" class="d-block img-fluid">
-                                            </div>
-                                        </a>
-                                        <div class="card-block">
-                                            <h2 class="card-title packages">alpha hotel</h2>
-                                            <p class="card-text">145 shoreditch high street, london e1 6je</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs col-sm col-md-3">
-                                    <div class="card">
-                                        <a href="http://placehold.it">
-                                            <div class="img-wrapper">
-                                                <img src="http://placehold.it/250x170" class="d-block img-fluid">
-                                            </div>
-                                        </a>
-                                        <div class="card-block">
-                                            <h2 class="card-title packages">jazz cafe</h2>
-                                            <p class="card-text">11 east road, lane alley bh2 8je</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs col-sm col-md-3">
-                                    <div class="card">
-                                        <a href="http://placehold.it">
-                                            <div class="img-wrapper">
-                                                <img src="http://placehold.it/250x170" class="d-block img-fluid">
-                                            </div>
-                                        </a>
-                                        <div class="card-block">
-                                            <h2 class="card-title packages">play experience uk</h2>
-                                            <p class="card-text">112-114 park lane, highgrove a32 6yu</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs col-sm col-md-3">
-                                    <div class="card">
-                                        <a href="http://placehold.it">
-                                            <div class="img-wrapper">
-                                                <img src="http://placehold.it/250x170" class="d-block img-fluid">
-                                            </div>
-                                        </a>
-                                        <div class="card-block">
-                                            <h2 class="card-title packages">atlantic market</h2>
-                                            <p class="card-text">11 east road, lane alley bh2 8je</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <!-- Venue carousel -->
+        <section>
+            <div class="flickety">
+                <h1 class="hero-sub hero-sub-pink packages-head">Choose your venue</h1>
+                <div class="carousel" data-flickity='{ "groupCells": true, "wrapAround": true, "pageDots": false }'>
+                    <div class="carousel-cell">
+                        <a href="http://placehold.it">
+                            <img src="/images/placeholder.png" class="d-block img-fluid">
+                        </a>
+                        <h2 class="card-title packages">alpha hotel</h2>
+                        <p class="card-text">145 shoreditch high street, london e1 6je</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="http://placehold.it">
+                            <img src="/images/placeholder.png" class="d-block img-fluid">
+                        </a>
+                        <h2 class="card-title packages">jazz cafe</h2>
+                        <p class="card-text">11 east road, lane alley bh2 8je</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="http://placehold.it">
+                            <img src="/images/placeholder.png" class="d-block img-fluid">
+                        </a>
+                        <h2 class="card-title packages">play experience uk</h2>
+                        <p class="card-text">112-114 park lane, highgrove a32 6yu</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="http://placehold.it">
+                            <img src="/images/placeholder.png" class="d-block img-fluid">
+                        </a>
+                        <h2 class="card-title packages">atlantic market</h2>
+                        <p class="card-text">11 east road, lane alley bh2 8je</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="http://placehold.it">
+                            <img src="/images/placeholder.png" class="d-block img-fluid">
+                        </a>
+                        <h2 class="card-title packages">alpha hotel</h2>
+                        <p class="card-text">145 shoreditch high street, london e1 6je</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="http://placehold.it">
+                            <img src="/images/placeholder.png" class="d-block img-fluid">
+                        </a>
+                        <h2 class="card-title packages">jazz cafe</h2>
+                        <p class="card-text">11 east road, lane alley bh2 8je</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="http://placehold.it">
+                            <img src="/images/placeholder.png" class="d-block img-fluid">
+                        </a>
+                        <h2 class="card-title packages">play experience uk</h2>
+                        <p class="card-text">112-114 park lane, highgrove a32 6yu</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="http://placehold.it">
+                            <img src="/images/placeholder.png" class="d-block img-fluid">
+                        </a>
+                        <h2 class="card-title packages">atlantic market</h2>
+                        <p class="card-text">11 east road, lane alley bh2 8je</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="http://placehold.it">
+                            <img src="/images/placeholder.png" class="d-block img-fluid">
+                        </a>
+                        <h2 class="card-title packages">alpha hotel</h2>
+                        <p class="card-text">145 shoreditch high street, london e1 6je</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="http://placehold.it">
+                            <img src="/images/placeholder.png" class="d-block img-fluid">
+                        </a>
+                        <h2 class="card-title packages">jazz cafe</h2>
+                        <p class="card-text">11 east road, lane alley bh2 8je</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <a href="http://placehold.it">
+                            <img src="/images/placeholder.png" class="d-block img-fluid">
+                        </a>
+                        <h2 class="card-title packages">play experience uk</h2>
+                        <p class="card-text">112-114 park lane, highgrove a32 6yu</p>
                     </div>
                 </div>
-                <a class="carousel-control-prev justify-content-start venues-carousel-top" href="#carousedlExampleControls" role="button" data-slide="prev">
-                    <span class="icon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next justify-content-end venues-carousel-top" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="icon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-        </div>
-    </div>
-</section>
-<section class="your-party">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-8">
+        </section>
+        <!-- Main content -->
+        <section class="your-party">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-8">
-                        <h1>The perfect package for your </br>little heroes</h1>
-                    </div>
-                    <div class="col-4">
-                        <h6 class="pull-right">Duration - 4 hours</h6>
-                    </div>
-                </div>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen></iframe>
-                </div>
-                <h1>Included in your party</h1>
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <a href="http://placehold.it">
-                                <img src="http://placehold.it/350x200" class="d-block img-fluid">
-                            </a>
-                            <div class="card-block">
-                                <h2 class="card-title">select a venue</h2>
+                        <div class="row">
+                            <div class="col-8">
+                                <h1>The perfect package for your </br>little heroes</h1>
+                            </div>
+                            <div class="col-4">
+                                <h6 class="pull-right">Duration - 4 hours</h6>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="http://placehold.it">
-                                <img src="http://placehold.it/350x200" class="d-block img-fluid">
-                            </a>
-                            <div class="card-block">
-                                <h2 class="card-title">buffet & soft drinks</h2>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="card-text">6-12 YEARS </p>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ScMzIvxBSi4" allowfullscreen></iframe>
+                        </div>
+                        <h1>Included in your party</h1>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <a href="http://placehold.it">
+                                        <img src="http://placehold.it/350x200" class="d-block img-fluid">
+                                    </a>
+                                    <div class="card-block">
+                                        <h2 class="card-title">select a venue</h2>
                                     </div>
-                                    <div class="col">
-                                        <div class="text-right">
-                                            <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <a href="http://placehold.it">
+                                        <img src="http://placehold.it/350x200" class="d-block img-fluid">
+                                    </a>
+                                    <div class="card-block">
+                                        <h2 class="card-title">buffet & soft drinks</h2>
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="card-text">6-12 YEARS </p>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-right">
+                                                    <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <a href="http://placehold.it">
-                                <img src="http://placehold.it/350x200" class="d-block img-fluid">
-                            </a>
-                            <div class="card-block">
-                                <h2 class="card-title">hero actors</h2>
-                                <div class="row">
-                                    <div class="col">
-                                        <p class="card-text">6-12 years</p>
-                                    </div>
-                                    <div class="col">
-                                        <div class="text-right">
-                                            <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <a href="http://placehold.it">
+                                        <img src="http://placehold.it/350x200" class="d-block img-fluid">
+                                    </a>
+                                    <div class="card-block">
+                                        <h2 class="card-title">hero actors</h2>
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="card-text">6-12 years</p>
+                                            </div>
+                                            <div class="col">
+                                                <div class="text-right">
+                                                    <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <a href="http://placehold.it">
-                                <img src="http://placehold.it/350x200" class="d-block img-fluid">
-                            </a>
-                            <div class="card-block">
-                                <h2 class="card-title">custom invites (free)</h2>
-                                <p class="card-text">print out or email</p>
+                            <div class="col">
+                                <div class="card">
+                                    <a href="http://placehold.it">
+                                        <img src="http://placehold.it/350x200" class="d-block img-fluid">
+                                    </a>
+                                    <div class="card-block">
+                                        <h2 class="card-title">custom invites (free)</h2>
+                                        <p class="card-text">print out or email</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="summary text-muted">
+                            <h2>This is our signature party for boys and girls of all ages.</h2>
+                            <p>Your childs favourite superhero makes a grand entrance to greet the kids and announce a search for a new Superhero Team!
+                                The Birthday Child and their friends are trained in the art of Super-Heroics, including a lesson on Signature Character Moves!
+                            Taking the Training to a new level, our superhero will lead the kids in a series of interactive games and challenges to test their Strength, Speed and Agility! Each guest receives a temporary tattoo and a chance to test their Super Skills on the Superhero! Our Superhero poses with the Birthday Child and their guests for a memorable Super Team Photo as well as individual photos with all the guests!</p>
+                            <p style="padding-bottom: 100px">The Birthday Child recieves a Surprise Birthday gift and certificate from the Superhero and all the guests receive a signed Superhero Keepsake before forever being sworn in as members of the Superhero's team!</p>
+                        </div>
+                    </div>
+                    <div class="col-4 block">
+                        
                     </div>
                 </div>
-                <div class="summary text-muted">
-                    <h2>This is our signature party for boys and girls of all ages.</h2>
-                    <p>Your childs favourite superhero makes a grand entrance to greet the kids and announce a search for a new Superhero Team!
-                        The Birthday Child and their friends are trained in the art of Super-Heroics, including a lesson on Signature Character Moves!
-                    Taking the Training to a new level, our superhero will lead the kids in a series of interactive games and challenges to test their Strength, Speed and Agility! Each guest receives a temporary tattoo and a chance to test their Super Skills on the Superhero! Our Superhero poses with the Birthday Child and their guests for a memorable Super Team Photo as well as individual photos with all the guests!</p>
-                    <p style="padding-bottom: 100px">The Birthday Child recieves a Surprise Birthday gift and certificate from the Superhero and all the guests receive a signed Superhero Keepsake before forever being sworn in as members of the Superhero's team!</p>
-                </div>
             </div>
-            <div class="col-4 block">
-                
+        </section>
+        <footer>
+            <hr>
+            <div class="footer">
+                <img src="images/trustpilot.png" class="logo" width="100px" />
+                <img src="images/ofsted.png" class="logo" width="100px" />
+                <img src="images/ssl-image.png" class="logo" width="100px" />
             </div>
-        </div>
-    </div>
-</section>
-<footer>
-    <hr>
-    <div class="footer">
-        <img src="images/trustpilot.png" class="logo" width="100px" />
-        <img src="images/ofsted.png" class="logo" width="100px" />
-        <img src="images/ssl-image.png" class="logo" width="100px" />
-    </div>
-    <div class="foot-nav">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active text-muted" href="#">&copy; Party Doh 2017</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-muted" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-muted" href="#">Terms</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-muted" href="#">Suppliers</a>
-            </li>
-        </ul>
-    </div>
-</footer>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-crossorigin="anonymous"></script>
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-<script>
-(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l4function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-e.src='https://www.google-analytics.com/analytics.js';
-r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-ga('create','UA-XXXXX-X');ga('send','pageview');
-</script>
-<!-- build:js scripts/vendor.js -->
-<!-- bower:js -->
-<script src="/bower_components/jquery/dist/jquery.js"></script>
-<script src="/bower_components/tether/dist/js/tether.js"></script>
-<script src="/bower_components/modernizr/modernizr.js"></script>
-<!-- endbower -->
-<!-- endbuild -->
-<!-- build:js scripts/plugins.js -->
-<script src="/bower_components/bootstrap/js/dist/util.js"></script>
-<script src="/bower_components/bootstrap/js/dist/alert.js"></script>
-<script src="/bower_components/bootstrap/js/dist/button.js"></script>
-<script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
-<script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
-<script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
-<script src="/bower_components/bootstrap/js/dist/modal.js"></script>
-<script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
-<script src="/bower_components/bootstrap/js/dist/tab.js"></script>
-<script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
-<script src="/bower_components/bootstrap/js/dist/popover.js"></script>
-<!-- endbuild -->
-<!-- build:js scripts/main.js -->
-<script src="scripts/main.js"></script>
-<script src="scripts/stars.js"></script>
-<!-- <script src="scripts/carousel.js"></script> -->
-<!-- endbuild -->
-</body>
+            <div class="foot-nav">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active text-muted" href="#">&copy; Party Doh 2017</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#">Terms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-muted" href="#">Suppliers</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l4function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/tether/dist/js/tether.js"></script>
+        <script src="/bower_components/modernizr/modernizr.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:js scripts/plugins.js -->
+        <script src="/bower_components/bootstrap/js/dist/util.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/alert.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/button.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/carousel.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/collapse.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/dropdown.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/modal.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/scrollspy.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/tab.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/tooltip.js"></script>
+        <script src="/bower_components/bootstrap/js/dist/popover.js"></script>
+        <!-- endbuild -->
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <script src="scripts/stars.js"></script>
+        <script src="scripts/flickity.js"></script>
+        <!-- <script src="scripts/carousel.js"></script> -->
+        <!-- endbuild -->
+    </body>
 </html>

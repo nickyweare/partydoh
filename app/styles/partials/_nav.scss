@@ -12,6 +12,12 @@ nav.wai-nav {
     font-family: 'ceragr-blackuploaded_file';
     text-transform: uppercase;
     font-size: 0.8rem;
+    &.wai-nav-green {
+    	background: $green;
+    }
+    &.wai-nav-yellow {
+    	background: $yellow;
+    }
     @include media-breakpoint-down(sm) {
 		display: block;
 		padding: 0;
@@ -57,7 +63,6 @@ nav.wai-nav {
 					padding: 25px 40px;
 					font-size: 16px;
 					border-bottom: 1px solid darken($purple, 10%);
-
 				}
 				&:hover {
 					text-decoration: none;
