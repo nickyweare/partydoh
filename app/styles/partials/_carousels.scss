@@ -1,187 +1,87 @@
-.flickety {
-	padding: 40px 20px 40px 20px;
-
-	@include media-breakpoint-up(md) {
-		padding: 20px 20px 20px 20px
-	}
-
-	@include media-breakpoint-up(lg) {
-		padding: 20px 20px 20px 20px
-	}
-
-	/* external css: flickity.css */
-	h1 {
-		padding-bottom: 20px;
-	}
-
-	.fa-star, .fa-star-o {
-			color: $yellow;
-		}
-
-	h2 {
-		color: $pink;
-		font-family: 'ceragr-blackuploaded_file';
-		font-size: 16px;
-		text-transform: uppercase;
-		margin-top: 10px;
-		margin-bottom: 0px;
-		position: relative;
-
-		.fa-star, .fa-star-o {
-			color: $yellow;
-		}
-	}
-
-	h3 {
-		font-weight: 700;
-		margin-bottom: 0;
-	}
-
-	h4 {
-		font-family: 'lato', sans-serif;
-		font-size: 12px;
-		font-weight: 900;
-		margin-bottom: 0;
-	}
-
-	h5 {
-		font-size: 16px;
-		margin-bottom: 5px;
-	}
-	
-	.cell-header {
-		margin-bottom: 10px;
-
-		h5 {
-			
-			span {
-				font-size: 16px;
-				padding-right: 5px;
-			}
-
-			small {
-				font-size: 12px;
-			}
-		}
-	}
-
-	h6 {
-		margin-bottom: 0;
-		font-size: 12px;
-	}
-
-	p {
-		color: black;
-		font-family: 'lato', sans-serif;
-		font-size: 12px;
-		font-weight: 600;
-		text-transform: uppercase;
-		margin-bottom: 0;
-
-	}
-
-	* { box-sizing: border-box; }
-
-	// body {}
-
-	img {
-		width: 100%;
-		height: 60%;
-		margin: auto;
-	}
-
-	.img-wrapper {
-   		position: relative;
-
-   		h6 {
-		font-family: 'ceragr-blackuploaded_file';
-		font-size: 13px;
-		font-weight: 200;
-		color: white;
-		position: absolute;
-   		bottom: 50px;
-   		left: 20px;
-   		@media (max-width: 768px) {
-			position: absolute;
-	   		bottom: 45px;
-	   		left: 20px;
-			}
-		}
-
-		h4 {
-			color: white;
-			font-size: 30px;
-			font-weight: 900;
-			position: absolute;
-	   		bottom: 15px;
-	   		left: 20px;
-	   		@media (max-width: 768px) {
-				position: absolute;
-		   		bottom: 15px;
-		   		left: 20px;
-			}
-		}
-	}
-
-	.carousel {
-	  // background: #EEE;
-	}
-
+/* Party Package */
+.party-packages-carousel {
 	.carousel-cell {
-	  height: 300px;
-	  margin-right: 10px;
-	  border-radius: 5px;
-	  counter-increment: carousel-cell;
-	  @include media-breakpoint-up(lg) {
-			height: 350px; 
+		margin-right: 25px;
+		width: 300px;
+		img {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		h2 {
+			color: $pink;
+			font-family: 'ceragr-blackuploaded_file';
+			text-transform: uppercase;
+			font-size: 16px;
+			letter-spacing: 1px;
+		}
+		.price-bookings-wrapper {
+			display: flex;
+			justify-content: space-between;
+			.price-wrapper {
+				align-self: flex-end;
+				p {
+					margin-bottom: 0;
+					&.price {
+						font-size: 22px;
+						font-weight: 600;
+					}
+				}
+			}
+			.bookings-wrapper {
+				align-self: flex-end;
+				text-align: right;
+				p {
+					margin-bottom: 0;
+					&.booking {
+						font-weight: 600;
+					}
+				}
+			}
 		}
 	}
+}
 
-	.carousel-cell.is-selected {
-	  // background: #ED2;
+/* All Carousels */
+.star-rating {
+	display: flex;
+	span {
+
 	}
+	p {
 
-	/* cell number */
-	.carousel-cell:before {
-	  display: block;
-	  text-align: center;
-	  // content: counter(carousel-cell);
-	  line-height: 200px;
-	  font-size: 80px;
-	  color: white;
 	}
+}
 
+.carousel {
 	.flickity-prev-next-button {
-		top: 30%;
+		background: transparent;
 	}
 
-	@include media-breakpoint-up(md) {
-		.carousel-cell { 
-			width: 25%; 
+	.flickity-prev-next-button:hover {
+		background: transparent;
+	}
+
+	/* arrow color */
+	.flickity-prev-next-button .arrow {
+		fill: lighten($black, 75%);
+	}
+
+	.flickity-prev-next-button.no-svg {
+		fill: lighten($black, 75%);
+	}
+
+	/* position outside */
+	.flickity-prev-next-button.previous {
+		left: -40px;
+		@include media-breakpoint-down(sm) {
+			display: none;
 		}
 	}
 
-	@include media-breakpoint-down(md) {
-		.carousel-cell {
-		 width: 35%; 
+	.flickity-prev-next-button.next {
+		right: -40px;
+		@include media-breakpoint-down(sm) {
+			display: none;
 		}
 	}
-
-	@include media-breakpoint-down(xs) {
-		.carousel-cell { 
-			width: 80%; 
-			// margin-left: auto;
-		}
-	}
-
-
-	// @media screen and ( min-width: 768px ) {
-	//   /* half-width cells for larger devices */
-	//   .carousel-cell { width: 25%; }
-	// }
-
-	// @media screen and ( max-width: 575px ) {
-	//   /* half-width cells for larger devices */
-	//   .carousel-cell { width: 35%; }
-	// }
 }
