@@ -1,27 +1,42 @@
-/////// Heros ////////
-.hero {
-    background-color: $pink;
-    height: 550px;
-    font-family: 'ceragr-blackuploaded_file'; 
+section.hero {
+    background: url(../../images/hero-pp.jpg) center center fixed;
+    background-size: cover;
+    height: 100vh;
     margin-bottom: 90px;
-    &.packpage-hero {
-    	background: $green;
-        padding-top: 100px;
-        margin-bottom: 100px;
-    	h1 {
-    		margin-left: -5px;
-    		padding-top: 75px;
-    	}
-        #from {
-            padding-top: 75px;
+    @include media-breakpoint-down(sm) {
+        background: url(../../images/hero-pp.jpg) center center;
+    }   
+    .container {
+        display: flex;
+        height: 100%;
+        align-items: flex-end;
+        justify-content: center;
+        .hero-content {
+            padding-bottom: 90px;
+            text-align: center;
+            @include media-breakpoint-down(sm) {
+                padding-bottom: 75px;
+            }
+            h1.hero {
+                font-family: 'ceragr-blackuploaded_file';
+                font-size: 120px;
+                letter-spacing: 1px;
+                color: white;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                @include media-breakpoint-down(sm) {
+                    font-size: 70px;
+                }
+            }
+            p {
+                font-family: 'ceragr-lightuploaded_file';
+                font-size: 24px;
+                color: $yellow;
+                margin-bottom: 60px;
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 40px;
+                }
+            }
         }
-    }
-    &.create-party-hero {
-        background: $yellow;
-        height: 650px;
-        margin-bottom: 0;
-    }
-    h1 {
-    	padding-top: 200px;
     }
 }

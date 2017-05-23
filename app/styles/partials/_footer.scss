@@ -1,16 +1,25 @@
 footer {
-
-	hr {
-		margin-top: 0;
+	border-top: 1px solid lighten($black, 90%);
+	padding: 45px 0;
+	background: lighten($black, 95%);
+	.footer-images {
+		margin-bottom: 20px;
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			li {
+				margin-left: 20px;
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
 	}
-
-	.footer {
-		padding: 40px 0 20px 0;
-		text-align: center;
-	}
-
-	.foot-nav {
+	.footer-nav {
 		font-size: 10px;
-		padding-bottom: 60px;
 	}
 }

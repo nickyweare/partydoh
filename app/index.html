@@ -29,6 +29,7 @@
         <!--[if IE]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <!-- Nav -->
         <nav class="wai-nav">
             <div class="wai-nav-logo">
                 <a href="index.html"><img src="images/partydoh-logo.svg" width="100px" height="auto"></a>
@@ -46,36 +47,35 @@
         <!-- Hero section -->
         <section class="hero">
             <div class="container">
-                <h1 class="hero-title text-center">kapop!</h1>
-                <h2 class="hero-sub hero-sub-yellow text-center">create a party to remember</h2>
-                <div class="form-wrapper">
-                    <form class="form-inline form-cust justify-content-center">
-                        <div class="input-group">
-                            <input type="text" class="form-control search" placeholder="Postcode">
-                            <span class="input-group-btn">
-                                <button class="btn wai-search-btn" type="button"><span class="fa fa-search fa-flip-horizontal"></span></button>
-                            </span>
+                <div class="hero-content">
+                    <h1 class="hero">Kapow!</h1>
+                    <p>create a party to remember</p>
+                    <form class="wai-form hero-form">
+                        <div class="wai-form-group">
+                            <input type="text" name="postcode" placeholder="Postcode">
+                            <span class="icon-magnifier"></span>
                         </div>
-                        <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
-                            <option selected>Date of party</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
-                            <option selected>No. of guests</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <button type="submit" class="btn wai-btn">create party</button>
+                        <div class="wai-form-group">
+                            <input type="date" name="date" placeholder="Date of party">
+                        </div>
+                        <div class="wai-form-group no-border">
+                            <input type="number" name="number" placeholder="Number of guests">
+                        </div>
+                        <div class="wai-form-group no-border">
+                            <button type="submit" class="wai-btn"> Create party</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </section>
-        <!-- Party packages -->
+        <!-- Party Packages -->
         <section class="party-packages">
             <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Hand picked party packages</h1>
+                    </div>
+                </div>
                 <div class="carousel party-packages-carousel" data-flickity='{ "groupCells": true, "pageDots": false, "contain": true }'>
                     <div class="carousel-cell">
                         <img src="images/pp-img-1.png" />
@@ -260,35 +260,222 @@
                 </div>
             </div>
         </section>
+        <!-- Venues -->
+        <section class="party-packages">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Fantastic venues to hire</h1>
+                    </div>
+                </div>
+                <div class="carousel party-packages-carousel venues-carousel" data-flickity='{ "groupCells": true, "pageDots": false, "contain": true }'>
+                    <div class="carousel-cell">
+                        <div class="venue-img-wrapper">
+                            <img src="images/v-1.png" />
+                            <div class="img-content-overlay">
+                                <p>Day hire</p>
+                                <p class="price">£120</p>
+                            </div>
+                        </div>
+                        <h2>Alpha Hotel</h2>
+                        <p>145 Shoreditch High Street, London E1 6JE</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="venue-img-wrapper">
+                            <img src="images/v-1.png" />
+                            <div class="img-content-overlay">
+                                <p>Day hire</p>
+                                <p class="price">£120</p>
+                            </div>
+                        </div>
+                        <h2>Alpha Hotel</h2>
+                        <p>145 Shoreditch High Street, London E1 6JE</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="venue-img-wrapper">
+                            <img src="images/v-1.png" />
+                            <div class="img-content-overlay">
+                                <p>Day hire</p>
+                                <p class="price">£120</p>
+                            </div>
+                        </div>
+                        <h2>Alpha Hotel</h2>
+                        <p>145 Shoreditch High Street, London E1 6JE</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="venue-img-wrapper">
+                            <img src="images/v-1.png" />
+                            <div class="img-content-overlay">
+                                <p>Day hire</p>
+                                <p class="price">£120</p>
+                            </div>
+                        </div>
+                        <h2>Alpha Hotel</h2>
+                        <p>145 Shoreditch High Street, London E1 6JE</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="venue-img-wrapper">
+                            <img src="images/v-1.png" />
+                            <div class="img-content-overlay">
+                                <p>Day hire</p>
+                                <p class="price">£120</p>
+                            </div>
+                        </div>
+                        <h2>Alpha Hotel</h2>
+                        <p>145 Shoreditch High Street, London E1 6JE</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="venue-img-wrapper">
+                            <img src="images/v-1.png" />
+                            <div class="img-content-overlay">
+                                <p>Day hire</p>
+                                <p class="price">£120</p>
+                            </div>
+                        </div>
+                        <h2>Alpha Hotel</h2>
+                        <p>145 Shoreditch High Street, London E1 6JE</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="venue-img-wrapper">
+                            <img src="images/v-1.png" />
+                            <div class="img-content-overlay">
+                                <p>Day hire</p>
+                                <p class="price">£120</p>
+                            </div>
+                        </div>
+                        <h2>Alpha Hotel</h2>
+                        <p>145 Shoreditch High Street, London E1 6JE</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="venue-img-wrapper">
+                            <img src="images/v-1.png" />
+                            <div class="img-content-overlay">
+                                <p>Day hire</p>
+                                <p class="price">£120</p>
+                            </div>
+                        </div>
+                        <h2>Alpha Hotel</h2>
+                        <p>145 Shoreditch High Street, London E1 6JE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Entertainers -->
+        <section class="party-packages entertainers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Incredible entertainers</h1>
+                    </div>
+                </div>
+                <div class="carousel party-packages-carousel" data-flickity='{ "groupCells": true, "pageDots": false, "contain": true }'>
+                    <div class="carousel-cell">
+                        <img src="images/e-1.png" />
+                        <h2>Dr Whiz-bang</h2>
+                        <div class="star-rating">
+                            <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                            <p>21 Reviews</p>
+                        </div>
+                        <p>6-12 years</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/e-1.png" />
+                        <h2>Dr Whiz-bang</h2>
+                        <div class="star-rating">
+                            <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                            <p>21 Reviews</p>
+                        </div>
+                        <p>6-12 years</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/e-1.png" />
+                        <h2>Dr Whiz-bang</h2>
+                        <div class="star-rating">
+                            <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                            <p>21 Reviews</p>
+                        </div>
+                        <p>6-12 years</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/e-1.png" />
+                        <h2>Dr Whiz-bang</h2>
+                        <div class="star-rating">
+                            <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                            <p>21 Reviews</p>
+                        </div>
+                        <p>6-12 years</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/e-1.png" />
+                        <h2>Dr Whiz-bang</h2>
+                        <div class="star-rating">
+                            <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                            <p>21 Reviews</p>
+                        </div>
+                        <p>6-12 years</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/e-1.png" />
+                        <h2>Dr Whiz-bang</h2>
+                        <div class="star-rating">
+                            <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                            <p>21 Reviews</p>
+                        </div>
+                        <p>6-12 years</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/e-1.png" />
+                        <h2>Dr Whiz-bang</h2>
+                        <div class="star-rating">
+                            <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                            <p>21 Reviews</p>
+                        </div>
+                        <p>6-12 years</p>
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="images/e-1.png" />
+                        <h2>Dr Whiz-bang</h2>
+                        <div class="star-rating">
+                            <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                            <p>21 Reviews</p>
+                        </div>
+                        <p>6-12 years</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Footer -->
         <footer>
-            <hr>
-            <div class="footer">
-                <img src="images/trustpilot.png" class="logo" width="100px" />
-                <img src="images/ofsted.png" class="logo" width="100px" />
-                <img src="images/ssl-image.png" class="logo" width="100px" />
-            </div>
-            <div class="foot-nav">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active text-muted" href="#">&copy; Party Doh 2017</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-muted" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-muted" href="#">Terms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-muted" href="#">Suppliers</a>
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="footer-images">
+                    <ul>
+                        <li><img src="images/trustpilot.png" class="logo" width="100px" /></li>
+                        <li><img src="images/ofsted.png" class="logo" width="70px" /></li>
+                        <li><img src="images/ssl.png" class="logo" width="50px" /></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">&copy; Party Doh 2017</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">Terms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">Suppliers</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </footer>
+
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l4function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -324,5 +511,13 @@
         <script src="scripts/flickity.js"></script>
         <!-- <script src="scripts/carousel.js"></script> -->
         <!-- endbuild -->
+        <script>
+            $(function () {
+              $(document).scroll(function () {
+                var $nav = $(".wai-nav");
+                $nav.toggleClass('nav-scrolled', $(this).scrollTop() > $nav.height());
+              });
+            });
+        </script>
     </body>
 </html>

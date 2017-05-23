@@ -8,10 +8,11 @@ nav.wai-nav {
 	display: flex;
     justify-content: space-between;
     align-items: center;	
-    background-color: $pink;
+    // background-color: $pink;
     font-family: 'ceragr-blackuploaded_file';
     text-transform: uppercase;
     font-size: 0.8rem;
+    transition: background-color 200ms ease;
     &.wai-nav-green {
     	background: $green;
     }
@@ -87,4 +88,9 @@ nav.wai-nav {
 			display: block;
 		}
 	}
+}
+
+.nav-scrolled {
+	background-color: $pink;
+	transition: background-color 200ms ease;
 }
