@@ -93,4 +93,7 @@ nav.wai-nav {
 .nav-scrolled {
 	background-color: $pink;
 	transition: background-color 200ms ease;
+	&.nav-scrolled-green {
+		background-color: $green;
+	}
 }

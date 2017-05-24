@@ -53,3 +53,82 @@ form.wai-form {
 		}
 	}
 }
+
+form.booking-form {
+	background: rgba(255,255,255,0.9);
+	border-radius: 10px;
+	// display: flex;
+	// flex-wrap: wrap;
+	// flex-direction: column;
+	padding: 40px;
+	width: 80%;
+	z-index: 1;
+	@include media-breakpoint-down(sm) {
+		padding: 30px;
+        width: 90%;         
+    }
+	h1 {
+		text-align: center;
+	}
+	.booking-form-group {
+		display: flex;
+		margin-bottom: 20px;
+		justify-content: center;
+		input {
+			background-color: lighten($black, 90%);
+			border: none;
+			border-radius: 3px;
+			padding: 8px 12px;
+			width: 100%;
+		}
+		input::placeholder {
+			color: lighten($black, 60%);
+			font-size: 12px;
+		}
+	}
+	.price-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: baseline;
+		.from {
+			p {
+				color: #292b2c;
+				font-size: 10px;
+				font-weight: 600;	
+			}
+		}
+		.price {
+			p {
+				color: $pink;
+				font-family: 'lato', sans-serif;
+			}
+		}
+	}
+	button.wai-btn {
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+		font-size: 8px;
+		margin-bottom: 20px;
+		width: 50%;
+	}
+	.form-logos {
+		display: flex;
+		justify-content: center;
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			li {
+				margin-left: 20px;
+				&:first-child {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}
