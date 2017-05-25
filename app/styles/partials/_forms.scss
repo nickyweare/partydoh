@@ -74,8 +74,19 @@ form.booking-form {
 		display: flex;
 		margin-bottom: 20px;
 		justify-content: center;
+		.select-wrapper {
+			position: relative;
+			width: 100%;
+			span {
+				color: lighten($black, 60%);
+				position: absolute;
+				right: 12px;
+				top: 15px;
+				font-size: 14px;
+			}
+		}
 		select, input {
-			// appearance: none;
+			appearance: none;
 			background-color: lighten($black, 90%);
 			border: none;
 			border-radius: 3px;
@@ -83,7 +94,7 @@ form.booking-form {
 			width: 100%;
 		}
 		select {
-			padding: 12px 12px;
+			padding: 12px 10px;
 		}
 		input::placeholder, select, option, input[type="date"] {
 			color: lighten($black, 60%);
