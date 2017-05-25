@@ -55,17 +55,22 @@
                     <form class="booking-form">
                         <h1>book your party now</h1>
                         <div class="booking-form-group">
-                            <input type="dropdown" name="option" placeholder="Select a venue">
+                            <select name="cars">
+                                <option value="">Select venue</option>
+                                <option value="saab">Saab</option>
+                                <option value="fiat">Fiat</option>
+                                <option value="audi">Audi</option>
+                            </select>
                         </div>
                         <div class="booking-form-group">
-                            <input type="option" name="option" placeholder="Number of guests">
+                            <input type="number" name="number" placeholder="Number of guests">
                         </div>
                         <div class="booking-form-group">
-                            <input type="option" name="option" placeholder="Preferred date of party">
+                            <input type="date" name="date" placeholder="Preferred date of party">
                         </div>
                         <div class="price-wrapper">
                             <div class="from">
-                                <p>from</p>
+                                <p>from&nbsp;</p>
                             </div>
                             <div class="price">
                                 <p><small>£</small>345</p>

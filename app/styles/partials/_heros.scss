@@ -1,6 +1,7 @@
 section.hero {
     background: url(../../images/hero-pp.jpg) center center fixed;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     margin-bottom: 90px;
     @include media-breakpoint-down(sm) {
@@ -66,7 +67,7 @@ section.hero {
                     display: flex;
                     flex-wrap: wrap;
                     margin: auto;
-                    padding: 40px;
+                    padding: 40px 40px 40px 0;
                     @include media-breakpoint-down(md) {
                         justify-content: center;
                         text-align: center;
