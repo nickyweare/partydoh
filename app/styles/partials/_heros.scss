@@ -44,6 +44,7 @@ section.hero {
     &.packpage-hero {
         background: url(../../images/hero-packpage.png) center center fixed;
         background-size: cover;
+        margin-bottom: 0;
         @include media-breakpoint-down(sm) {
             height: 100%;       
                 }

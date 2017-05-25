@@ -1,71 +1,35 @@
-//////// Your party ////////
-.your-party {
-		padding: 40px 0 0 40px;
-	
-	.col-padding {
-		padding-right: 60px;
-	}
-
-	h1 {
-		font-size: 28px;
-		padding-top: 40px;
-		padding-bottom: 30px;
-	}
-
-	h6 {
-		color: $pink;
-		font-family: 'lato', sans-serif;
-	}
-
-	//////// Cards ////////
-
-	.card {
-		border: none;
-		padding-bottom: 20px;
-
-		.card-block {
-			padding: 0;
+section.packpage-carousel {
+	background: lighten($black, 95%);
+	padding: 90px 0;
+}
+section.packpage-detail {
+	display: flex;
+	.perfect-package {
+		flex: 2;
+		padding: 40px;
+		.video {
+			margin-bottom: 40px;
 		}
-
-		img {
-			width: 100%;
-		}
-
-		h2 {
-			color: $pink;
-			font-family: 'ceragr-blackuploaded_file'; 
-			font-size: 19px;
-			margin-top: 15px;
-			margin-bottom: 0;
-			text-transform: uppercase;
-		}
-
-		p {
-			font-family: 'lato', sans-serif;
-			font-size: 12px;
-			font-weight: 800;
-			margin-top: 5px;
-			text-transform: uppercase;
-		}
-
-		.star-cust {
-			color: $yellow;
+		.images {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			.item {
+				display: flex;
+				margin-bottom: 20px;
+			}
 		}
 	}
-
-	.summary {
-		h2 {
-			font-size: 19px;
-			font-weight: 300;
-			padding: 20px 0 20px 0;;
-		}
-
-		p {
-			// padding-bottom: 40px;
-		}
+	.party-includes {
+		background-color: $purple;
+		flex: 1;
 	}
-
-	.block {
-		background: $purple;
+	.party-includes-fixed {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		height: 100%;
+		width: 280px;
 	}
 }
