@@ -57,9 +57,6 @@ form.wai-form {
 form.booking-form {
 	background: rgba(255,255,255,0.9);
 	border-radius: 10px;
-	// display: flex;
-	// flex-wrap: wrap;
-	// flex-direction: column;
 	padding: 40px;
 	width: 100%;
 	z-index: 1;
@@ -73,16 +70,25 @@ form.booking-form {
 	.booking-form-group {
 		display: flex;
 		margin-bottom: 20px;
-		justify-content: center;
+		justify-content: space-between;
 		.select-wrapper {
 			position: relative;
 			width: 100%;
+			&.select-short {
+				flex-direction: column;
+				width: 45%;
+			}
 			span {
+				align-items: center;
 				color: lighten($black, 60%);
 				position: absolute;
 				right: 12px;
 				top: 15px;
 				font-size: 14px;
+				&.icon-magnifier {
+					color: $pink;
+					transform: scaleX(-1);
+				}
 			}
 		}
 		select, input {
@@ -93,10 +99,7 @@ form.booking-form {
 			padding: 8px 12px;
 			width: 100%;
 		}
-		select {
-			padding: 12px 10px;
-		}
-		input::placeholder, select, option, input[type="date"] {
+		input::placeholder, select, option, input[type="date"], input[type="time"] {
 			color: lighten($black, 60%);
 			font-size: 12px;
 		}

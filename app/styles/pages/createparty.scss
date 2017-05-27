@@ -1,135 +1,44 @@
-//////// Your party ////////
-.create-party {
-		padding: 0 0 0 0;
-	
-	.col-padding {
-		padding-right: 60px;
+section.createparty-main {
+	display: flex;
+	.carousels {
+		flex: 2;
+		padding: 40px;
+		.carousel-wrapper {
+			margin-bottom: 20px;
+		}
 	}
-
-	h6 {
-		color: $pink;
-		font-family: 'lato', sans-serif;
-	}
-
-	//////// Carousels ////////
-	.icon-chevron-left, .icon-chevron-right {
-		color: grey;
-		font-size: 30px;
-	}
-
-	.carousel-control-prev {
-		margin-top: -80px;
-		width: 3%;
-		left: -10px;
-	}
-
-	.carousel-control-next {
-		margin-top: -80px;
-		width: 3%;
-		right: -10px;
-	}
-
-	.food-drink, decoration {
-		.carousel-control-prev {
-			margin-top: 30px;
-			width: 3%;
-			left: -10px;
-		}
-
-	.carousel-control-next {
-			margin-top: -60px;
-			width: 3%;
-			right: -10px;
-		}
-
-	}
-
-
-	
-	//////// Cards ////////
-	.card {
-		border: none;
-		padding-bottom: 20px;
-
-		.card-block {
-			padding: 0;
-		}
-
-		img {
-			width: 100%;
-		}
-
-		.img-wrapper {
-	   		position: relative;
-		}
-
-		h6 {
-			font-family: 'lato', sans-serif;
-			font-size: 13px;
-			font-weight: 900;
-			color: white;
-			position: absolute;
-	   		bottom: 50px;
-	   		left: 30px;
-	   		@media (max-width: 768px) {
-				font-size: 10px;
-				position: absolute;
-		   		bottom: 25px;
-		   		left: 20px;
-			}
-		}
-
-		h4 {
-			color: white;
-			font-size: 30px;
-			font-weight: 900;
-			position: absolute;
-	   		bottom: 15px;
-	   		left: 30px;
-	   		@media (max-width: 768px) {
-				font-size: 15px;
-				position: absolute;
-		   		bottom: 10px;
-		   		left: 20px;
-			}
-		}
-
+	.party-includes {
+		background-color: $purple;
+		flex: 1;
+		padding: 40px;
 		h2 {
-			color: $pink;
-			font-family: 'ceragr-blackuploaded_file'; 
-			font-size: 19px;
-			margin-top: 15px;
-			margin-bottom: 0;
-			text-transform: uppercase;
-		}
-
-		p {
-			font-family: 'lato', sans-serif;
-			font-size: 12px;
-			font-weight: 800;
-			margin-top: 5px;
-			text-transform: uppercase;
-		}
-
-		.star-cust {
-			color: $yellow;
-		}
-	}
-
-	.summary {
-		h2 {
-			font-size: 19px;
+			text-align: center;
+			color: white;
+			font-size: 22px;
 			font-weight: 300;
-			padding: 20px 0 20px 0;;
+			margin-bottom: 20px;
 		}
-
-		p {
-			// padding-bottom: 40px;
+		.text {
+			display: flex;
+			justify-content: space-between;
+			p {
+				color: white;
+				display: flex;
+				font-size: 15px;
+				font-weight: 300;
+				&.bold {
+					font-weight: 600;
+				}
+			}
 		}
-	}
-
-	.block {
-		background: $purple;
-		z-index: -1;
+		.btn-wrapper {
+			border-top: 1px solid white;
+			padding-top: 20px;
+			button.btn-text {
+				font-size: 10px;
+				margin-bottom: 20px;
+				width: 100%;
+			}
+		}
 	}
 }

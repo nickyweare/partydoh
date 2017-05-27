@@ -78,4 +78,15 @@ section.hero {
             }
         }
     }
+    &.createparty-hero {
+        background: $yellow;
+        .hero-content {
+            h1.hero-title-md {
+            font-size: 100px;
+            } 
+            p {
+                color: $purple;
+            }
+        }
+    }
 }

@@ -2,7 +2,7 @@ section.packpage-carousel {
 	background: lighten($black, 95%);
 	padding: 90px 0;
 }
-section.packpage-detail {
+section.packpage-main {
 	display: flex;
 	.perfect-package {
 		flex: 2;
@@ -51,7 +51,7 @@ section.packpage-detail {
 	.party-includes {
 		background-color: $purple;
 		flex: 1;
-		padding: 30px 30px;
+		padding: 40px;
 		h2 {
 			text-align: center;
 			color: white;
@@ -96,4 +96,4 @@ section.packpage-detail {
 		height: 100%;
 		width: 280px;
 	}
-}
+} 
