@@ -79,7 +79,7 @@ section.hero {
         }
     }
     &.createparty-hero {
-        background: $yellow;
+        background: url(../../images/hero-build.png) center center fixed;
         .hero-content {
             h1.hero-title-md {
             font-size: 100px;
@@ -88,5 +88,9 @@ section.hero {
                 color: $purple;
             }
         }
+    }
+    &.detailspage-hero {
+        background: url(../../images/hero-build.png) center center fixed;
+        height: 40vh;
     }
 }

@@ -1,8 +1,11 @@
 section.createparty-main {
 	display: flex;
+	@include media-breakpoint-down(sm) {
+            flex-direction: column;
+    }
 	.carousels {
 		flex: 2;
-		padding: 40px;
+		padding: 40px 60px;
 		.carousel-wrapper {
 			margin-bottom: 20px;
 		}
@@ -12,11 +15,10 @@ section.createparty-main {
 		flex: 1;
 		padding: 40px;
 		h2 {
-			text-align: center;
 			color: white;
-			font-size: 22px;
+			font-size: 30px;
 			font-weight: 300;
-			margin-bottom: 20px;
+			margin-bottom: 30px;
 		}
 		.text {
 			display: flex;
@@ -33,10 +35,9 @@ section.createparty-main {
 		}
 		.btn-wrapper {
 			border-top: 1px solid white;
-			padding-top: 20px;
+			margin-top: 20px;
+			padding-top: 40px;
 			button.btn-text {
-				font-size: 10px;
-				margin-bottom: 20px;
 				width: 100%;
 			}
 		}

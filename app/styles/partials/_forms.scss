@@ -60,6 +60,21 @@ form.booking-form {
 	padding: 40px;
 	width: 100%;
 	z-index: 1;
+	&.details-form {
+		padding: 0;
+		text-align: left;
+		h1 {
+			margin-bottom: 5px;
+			text-align: left;
+		}
+		h3 {
+			font-size: 1.2rem;
+			color: $pink;
+			margin-bottom: 15px;
+		}
+		button.wai-btn {
+		}
+	}
 	@include media-breakpoint-down(sm) {
 		padding: 30px;
         width: 90%;         
@@ -71,13 +86,23 @@ form.booking-form {
 		display: flex;
 		margin-bottom: 20px;
 		justify-content: space-between;
+		&.details-form-group {
+			margin-bottom: 12px;
+			&.form-group-extra {
+				margin-bottom: 30px;
+			}
+		}s
 		.select-wrapper {
 			position: relative;
 			width: 100%;
-			&.select-short {
+			&.select-row {
 				flex-direction: column;
+				width: 48%;
+			}
+			&.select-short {
 				width: 45%;
 			}
+
 			span {
 				align-items: center;
 				color: lighten($black, 60%);
@@ -128,9 +153,9 @@ form.booking-form {
 		text-align: center;
 		display: block;
 		margin: 0 auto;
-		font-size: 9px;
+		font-size: 12px;
 		margin-bottom: 20px;
-		width: 50%;
+		width: 75%;
 	}
 	.form-logos {
 		display: flex;

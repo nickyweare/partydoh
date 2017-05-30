@@ -1,56 +1,21 @@
-section.packpage-carousel {
-	background: lighten($black, 95%);
-	padding: 90px 0;
-}
-section.packpage-main {
+section.detailspage-main {
 	display: flex;
 	@include media-breakpoint-down(sm) {
             flex-direction: column;
     }
-	.perfect-package {
+	.customer-details {
 		flex: 2;
 		padding: 40px;
-		.video {
-			margin-bottom: 40px;
-		}
-		.images {
+		.details-pay-invite {
 			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			h2 {
-				color: $pink;
-				font-family: 'ceragr-blackuploaded_file';
-				text-transform: uppercase;
-				font-size: 19px;
-				letter-spacing: 1px;
-			}
-			.item {
-				flex-direction: column;
-				margin-bottom: 20px;
-				img {
-					display: flex;
-					height: 200px;
-					margin-bottom: 20px;
-					@include media-breakpoint-down(lg) {
-		                height: 175px;
-		            }
-		            @include media-breakpoint-down(md) {
-		                height: 150px;
-		            }
-		            @include media-breakpoint-down(sm) {
-		                width: 100%;
-		            }
+			p {
+				font-weight: 500;
+				.muted {
+					color: grey;
 				}
 			}
-		}
-		.description {
-			h2 {
-				font-size: 19px;
-				font-weight: 300;
-				margin-bottom: 20px;
-			}
-			p {
-				font-size: 15px;
+			.icon-chevron-right {
+				font-size: 10px;
 			}
 		}
 	}
@@ -112,4 +77,4 @@ section.packpage-main {
 		height: 100%;
 		width: 280px;
 	}
-} 
+}
