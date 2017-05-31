@@ -31,8 +31,8 @@ section.hero {
                 }
             }
             p {
-                font-family: 'ceragr-lightuploaded_file';
                 font-size: 24px;
+                font-weight: 400;
                 color: $yellow;
                 margin-bottom: 60px;
                 @include media-breakpoint-down(sm) {
@@ -57,7 +57,6 @@ section.hero {
             .hero-content {
                 text-align: left;
                 display: flex;
-                // justify-content: space-between;
                 @include media-breakpoint-down(sm) {
                     flex-wrap: wrap;
                 }
@@ -80,6 +79,8 @@ section.hero {
     }
     &.createparty-hero {
         background: url(../../images/hero-build.png) center center fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
         .hero-content {
             h1.hero-title-md {
             font-size: 100px;
@@ -91,6 +92,30 @@ section.hero {
     }
     &.detailspage-hero {
         background: url(../../images/hero-build.png) center center fixed;
-        height: 40vh;
+        height: 30vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &.entertainers-hero {
+        background: url(../../images/entertainer-hero.png) center center fixed;
+        .hero-content {
+            display: flex;
+            @include media-breakpoint-down(sm) {
+                flex-direction: column;
+            }
+            .sub-head {
+                p {
+                    color: white;
+                    &.hours {
+                        font-size: 10px;
+                        margin-bottom: 0;
+                        &.price {
+                            font-size: 30px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

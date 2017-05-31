@@ -6,6 +6,9 @@ section.createparty-main {
 	.carousels {
 		flex: 2;
 		padding: 40px 60px;
+		@include media-breakpoint-down(sm) {
+	    	padding: 40px 30px;   
+	    }
 		.carousel-wrapper {
 			margin-bottom: 20px;
 		}
