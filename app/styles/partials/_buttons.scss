@@ -22,6 +22,20 @@ button.wai-btn {
 		min-width: 40px;
 		padding: 3px;
 	}
+	&.entertainers-btn {
+    	// justify-content: flex-start;
+    	margin-top: 20px;
+    	min-width: 300px;
+    	width: 50%;
+    	@include media-breakpoint-down(sm) {
+	        width: 100%;       
+	    }
+	}
+	&.thankyou-btn {
+		&.thankyou-btn-pink {
+			
+		}
+	}
 	&:hover {
 		transition: all 200ms ease;
 		background: darken($purple, 10%);

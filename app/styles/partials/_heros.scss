@@ -98,24 +98,44 @@ section.hero {
     }
     &.entertainers-hero {
         background: url(../../images/entertainer-hero.png) center center fixed;
-        .hero-content {
-            display: flex;
+        display: flex;
+        height: 100%;
+        .container {
             @include media-breakpoint-down(sm) {
                 flex-direction: column;
+                padding-bottom: 60px;
             }
-            .sub-head {
-                p {
-                    color: white;
-                    &.hours {
-                        font-size: 10px;
-                        margin-bottom: 0;
-                        &.price {
-                            font-size: 30px;
-                            font-weight: 600;
+            .hero-content {
+                .hero-text-wrapper {
+                    h1 {
+                        text-align: left;
+                    }
+                    @include media-breakpoint-down(md) {
+                        justify-content: flex-start;
+                    }
+                    .sub-head {
+                        text-align: left;
+                        p {
+                            color: white;
+                            &.hours {
+                                font-size: 10px;
+                                margin-bottom: -10px;
+                                &.price {
+                                    font-size: 30px;
+                                    font-weight: 600;
+                                }
+                            }
                         }
                     }
                 }
             }
         }
+    }
+    &.thankyoupage-hero {
+        background: url(../../images/hero-packpage.png) center center fixed;
+        background-position: relative;
+        height: 30vh;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }

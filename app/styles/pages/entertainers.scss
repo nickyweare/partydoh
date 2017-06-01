@@ -1,13 +1,10 @@
 .pack-reviews {
-		flex: 2;
-		padding: 40px 60px;
-		@include media-breakpoint-down(sm) {
-	    	padding: 40px 30px;   
-	    }
-	    button.entertainers-btn {
-	    	width: 50%;
-	    	@include media-breakpoint-down(sm) {
-		        width: 100%;       
-		    }
-	    }
-	}
+	flex: 2;
+	padding: 40px 60px;
+	@include media-breakpoint-down(sm) {
+    	padding: 40px 30px;   
+    }
+    .customer-reviews {
+    	margin-top: 50px;
+    }
+}

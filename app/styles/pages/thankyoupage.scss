@@ -1,0 +1,62 @@
+section.thankyou-main {
+    .container {
+        // display: flex;
+        // flex-direction: column;
+        // flex-wrap: nowrap;
+        // justify-content: space-between;
+        padding: 30px 150px;
+        @include media-breakpoint-down(lg) {
+            padding: 30px 50px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 30px 30px;
+        }
+        h1.thankyou {
+            font-size: 40px;
+            text-align: center;
+        }
+        p.thankyou {
+            text-align: center;
+        }
+        .thankyou-content {
+            display: flex;
+            justify-content: space-between;
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+            }
+            .invite-buttons {
+                .invite {
+                    background: url(../../images/hero-packpage.png) center center;
+                    box-shadow: 0 0 10px black;
+                    padding: 20px;
+                    color: white;
+                    h1 {
+                        color: white;
+                        font-family: 'ceragr-blackuploaded_file';
+                        font-size: 50px;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        margin-bottom: 10px;
+                    }
+                    .invite-details {
+                        display: flex;
+                        .light {
+                         flex: 1;
+                        }
+                        .bold {
+                        flex: 1;
+                        }
+                    }
+                }
+            }
+            .email-form {
+                @include media-breakpoint-down(md) {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}

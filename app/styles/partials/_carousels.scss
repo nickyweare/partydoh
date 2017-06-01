@@ -63,8 +63,27 @@
 			}
 		}
 	}
-	&.entertainers-carousel {
-
+	&.reviews-carousel {
+		.carousel-cell {
+			width: 475px;
+			@include media-breakpoint-down(sm) {
+		    }
+			.content-wrap {
+	    		display: flex;
+		    	.image {
+		    		flex: 1;
+		    		margin-right: 10px;
+		    		img.img-circle {
+		    			border-radius: 50px;
+		    			height: 75px;
+		    			width: 75px;
+		    		}
+		    	}
+		    	.text {
+		    		flex: 2;
+		    	}
+			}
+		}
 	}
 }
 
