@@ -7,42 +7,10 @@ section.createparty-main {
 		flex: 2;
 		padding: 40px 60px;
 		@include media-breakpoint-down(sm) {
-	    	padding: 40px 30px;   
+	    	padding: 40px 15px;   
 	    }
 		.carousel-wrapper {
 			margin-bottom: 20px;
-		}
-	}
-	.party-includes {
-		background-color: $purple;
-		flex: 1;
-		padding: 40px;
-		h2 {
-			color: white;
-			font-size: 30px;
-			font-weight: 300;
-			margin-bottom: 30px;
-		}
-		.text {
-			display: flex;
-			justify-content: space-between;
-			p {
-				color: white;
-				display: flex;
-				font-size: 15px;
-				font-weight: 300;
-				&.bold {
-					font-weight: 600;
-				}
-			}
-		}
-		.btn-wrapper {
-			border-top: 1px solid white;
-			margin-top: 20px;
-			padding-top: 40px;
-			button.btn-text {
-				width: 100%;
-			}
 		}
 	}
 }

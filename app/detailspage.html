@@ -148,6 +148,67 @@
                     </div>
                 </form>
             </div>
+            <div class="party-includes-sticky">
+                <form>
+                    <h2>Your party includes</h2>
+                    <div class="text-wrapper">
+                        <div class="text">
+                            <p>Chosen Venue</p>
+                            <div class="edit-wrapper">
+                                <p class="bold">Jazz Cafe</p>
+                                <button class="wai-btn wai-btn-mini">edit</button>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>No. of guests</p>
+                            <div class="edit-wrapper">
+                                <p class="bold">1-10</p>
+                                <button class="wai-btn wai-btn-mini">edit</button>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>Date</p>
+                            <div class="edit-wrapper">
+                                <p class="bold">5th June 2017</p>
+                                <button class="wai-btn wai-btn-mini">edit</button>
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>Time</p>
+                            <div class="edit-wrapper">
+                                <p class="bold">4pm</p>
+                                <button class="wai-btn wai-btn-mini">edit</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="text">
+                            <p>Full of energy</p>
+                            <p class="bold">£90</p>
+                        </div>
+                        <div class="text">
+                            <p>jazz Cafe</p>
+                            <p class="bold">£180</p>
+                        </div>
+                        <div class="text">
+                            <p>Dr wizz-bang</p>
+                            <p class="bold">£90</p>
+                        </div>
+                        <div class="text">
+                            <p>Custom invites</p>
+                            <p class="bold">FREE</p>
+                        </div>
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="text total">
+                            <p class="bold large">£360</p>
+                        </div>
+                        <div class="text total">
+                            <p>Total Price</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </section>
         <!-- Footer -->
         <footer>
@@ -210,9 +271,11 @@
         <!-- endbuild -->
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
-        <script src="scripts/wai-nav.js"></script>
         <script src="scripts/stars.js"></script>
         <script src="scripts/flickity.js"></script>
+        <!-- Custom js -->
+        <script src="scripts/wai-nav.js"></script>
+        <script src="scripts/sidebar.js"></script>
         <!-- <script src="scripts/carousel.js"></script> -->
         <!-- endbuild -->
         <script>
@@ -220,11 +283,7 @@
         $(document).scroll(function () {
         var $nav = $(".wai-nav");
         $nav.toggleClass('nav-scrolled nav-scrolled-green nav-scrolled-yellow', $(this).scrollTop() > $nav.height());
-        });
-        // $(document).scroll(function () {
-        //     var $partyDiv = $('.party-includes');
-        //     $partyDiv.toggleClass('party-includes-fixed', $(this).scrollTop() > $partyDiv.height());
-        // });
+            });
         });
         </script>
     </body>

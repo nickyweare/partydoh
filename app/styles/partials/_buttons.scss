@@ -15,6 +15,12 @@ button.wai-btn {
 	&.wai-btn-pink {
 		background-color: $pink;
 	}
+	&.wai-btn-white {
+		background-color: white;
+		border: 3px solid $purple;
+		color: $purple;
+
+	}
 	&.wai-btn-mini {
 		border: 2px solid white; 
 		font-size: 7px;
@@ -31,10 +37,10 @@ button.wai-btn {
 	        width: 100%;       
 	    }
 	}
-	&.thankyou-btn {
-		&.thankyou-btn-pink {
-			
-		}
+	&.wai-btn-long {
+		@include media-breakpoint-down(sm) {
+	        width: 100%;       
+	    }
 	}
 	&:hover {
 		transition: all 200ms ease;

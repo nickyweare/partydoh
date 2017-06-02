@@ -1,0 +1,82 @@
+.party-includes, .party-includes-sticky {
+	background-color: $purple;
+	padding: 40px;
+	width: 400px;
+	@include media-breakpoint-down(sm) {
+        width: 100%;
+    }   
+	h2 {
+		color: white;
+		font-size: 30px;
+		font-weight: 300;
+		margin-bottom: 40px;
+	}
+	.text-wrapper {
+		border-top: 1px solid white;
+		padding-top: 20px;
+		.text {
+			display: flex;
+			font-family: 'lato', sans-serif !important;
+			justify-content: space-between;
+			&.total {
+				justify-content: flex-end;
+			}
+			.checkbox {
+				display: flex;
+				align-items: baseline;
+				p {
+					margin-bottom: 0;
+				}
+				input {
+					margin-left: 10px;
+				}
+			}
+			.edit-wrapper {
+				align-items: flex-start;
+				display: flex;
+				flex-wrap: wrap;
+			}
+			p {
+				color: white;
+				display: flex;
+				font-size: 15px;
+				font-weight: 300;
+				&.bold {
+					font-weight: 600;
+					&.large {
+						font-size: 30px;
+						margin-bottom: 0;	
+					}
+				}
+			}
+		}
+		button.btn-text {
+			margin-bottom: 20px;
+			width: 100%;
+		}
+	}
+}
+
+.party-includes-sticky {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 400px;
+	z-index: 1000;
+	overflow-y: scroll;
+}
+.party-includes-sticky-show {
+	display: block;
+	@include media-breakpoint-down(sm) {
+        display: none;
+    }
+}
+.party-includes-hide {
+	opacity: 0;
+	@include media-breakpoint-down(sm) {
+        opacity: 100;
+    }
+}

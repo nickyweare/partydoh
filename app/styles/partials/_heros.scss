@@ -6,6 +6,7 @@ section.hero {
     margin-bottom: 90px;
     @include media-breakpoint-down(sm) {
         background: url(../../images/hero-pp.jpg) center center;
+        background-size: cover;
     }   
     .container {
         display: flex;
@@ -46,8 +47,10 @@ section.hero {
         background-size: cover;
         margin-bottom: 0;
         @include media-breakpoint-down(sm) {
-            height: 100%;       
-                }
+            background: url(../../images/hero-packpage.png) center center;
+            background-size: cover;
+            height: 100%;
+        }   
         .container {
             align-items: center;
             padding-top: 120px;
@@ -78,9 +81,14 @@ section.hero {
         }
     }
     &.createparty-hero {
-        background: url(../../images/hero-build.png) center center fixed;
+        background: url(../../images/hero-build.png) center center;
         background-repeat: no-repeat;
         background-size: cover;
+        @include media-breakpoint-down(sm) {
+            background: url(../../images/hero-build.png) center center;
+            background-size: cover;
+            height: 100%;
+        }   
         .hero-content {
             h1.hero-title-md {
             font-size: 100px;
@@ -95,17 +103,26 @@ section.hero {
         height: 30vh;
         background-repeat: no-repeat;
         background-size: cover;
+        @include media-breakpoint-down(sm) {
+            background: url(../../images/hero-build.png) center center;
+            background-size: cover;
+        }   
     }
     &.entertainers-hero {
         background: url(../../images/entertainer-hero.png) center center fixed;
-        display: flex;
+        background-size: cover;
         height: 100%;
+        @include media-breakpoint-down(sm) {
+            background: url(../../images/entertainer-hero.png) center center;
+            background-size: cover;
+        }   
         .container {
-            @include media-breakpoint-down(sm) {
+            @include media-breakpoint-down(md) {
                 flex-direction: column;
-                padding-bottom: 60px;
+                padding-bottom: 30px;
             }
             .hero-content {
+                padding-bottom: 0;
                 .hero-text-wrapper {
                     h1 {
                         text-align: left;
@@ -123,6 +140,7 @@ section.hero {
                                 &.price {
                                     font-size: 30px;
                                     font-weight: 600;
+                                    margin-bottom: 10px;
                                 }
                             }
                         }
@@ -130,12 +148,22 @@ section.hero {
                 }
             }
         }
+        .video {
+            @include media-breakpoint-down(md) {
+                margin-top: 40px;
+                margin-bottom: 40px;      
+            }
+        }
     }
     &.thankyoupage-hero {
         background: url(../../images/hero-packpage.png) center center fixed;
-        background-position: relative;
+        // background-position: relative;
         height: 30vh;
         background-repeat: no-repeat;
         background-size: cover;
+        @include media-breakpoint-down(sm) {
+            background: url(../../images/hero-packpage.png) center center;
+            background-size: cover;
+        }   
     }
 }

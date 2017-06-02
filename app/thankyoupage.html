@@ -56,7 +56,7 @@
                 <div class="thankyou-content">
                     <div class="invite-buttons">
                         <div class="invite">
-                            <p>You have been invited to Sam Whitlock's party for</p>
+                            <p class="center">You have been invited to <strong>Sam Whitlock's party</strong> for</p>
                             <h1>SUPER HEROS</h1>
                             <div class="invite-details">
                                 <div class="light">
@@ -71,10 +71,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div>
-                            <button class="wai-btn details-btn">book party now</button>
-                            <button class="wai-btn details-btn">book party now</button>
-                        </div> -->
+                        <div class="buttons-wrapper">
+                            <button class="wai-btn wai-btn-long thankyou-button">download invite</button>
+                            <button class="wai-btn wai-btn-white wai-btn-long">share your party</button>
+                        </div>
                     </div>
                     <div class="email-form">
                         <form class="booking-form details-form">
@@ -87,7 +87,7 @@
                                 </div>
                             </div>
                         </form>
-                        <button class="wai-btn details-btn">book party now</button>
+                        <button class="wai-btn wai-btn-pink wai-btn-long">send invites</button>
                     </div>
                 </div>
             </div>
@@ -162,7 +162,7 @@
         $(function () {
         $(document).scroll(function () {
         var $nav = $(".wai-nav");
-        $nav.toggleClass('nav-scrolled nav-scrolled-green nav-scrolled-yellow', $(this).scrollTop() > $nav.height());
+        $nav.toggleClass('nav-scrolled nav-scrolled-green', $(this).scrollTop() > $nav.height());
         });
         // $(document).scroll(function () {
         //     var $partyDiv = $('.party-includes');

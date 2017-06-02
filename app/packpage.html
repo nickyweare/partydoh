@@ -189,8 +189,62 @@
             </div>
             <!-- Purple block -->
             <div class="party-includes">
-            <form>
-                <h2>Your party includes</h2>
+                <form>
+                    <h2>Your party includes</h2>
+                    <div class="text-wrapper">
+                        <div class="text">
+                            <p>Venue</p>
+                            <p class="bold">Included</p>
+                        </div>
+                        <div class="text">
+                            <p>Entertainment</p>
+                            <p class="bold">Included</p>
+                        </div>
+                        <div class="text">
+                            <p>Catering</p>
+                            <p class="bold">Included</p>
+                        </div>
+                        <div class="text">
+                            <p>Custom invites</p>
+                            <p class="bold">FREE</p>
+                        </div>
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="text">
+                            <p class="bold">EXTRAS</p>
+                        </div>
+                        <div class="text">
+                            <p>Photographer</p>
+                            <div class="checkbox">
+                                <p class="bold">£100</p>
+                                <input type="checkbox" name="photographer" value="Bike">
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p>Balloon Modelling</p>
+                            <div class="checkbox">
+                                <p class="bold">£60</p>
+                                <input type="checkbox" name="vehicle" value="Bike">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-wrapper">
+                        <div class="text total">
+                            <p class="bold large">£375</p>
+                        </div>
+                        <div class="text total">
+                            <p>Total Price</p>
+                        </div>
+                    </div>
+                    <div class="text-wrapper">
+                        <button type="submit" name="customize" class="btn-text wai-btn wai-btn-pink">customize party</button>
+                        <button type="submit" name="book" class="btn-text wai-btn">book hero package</button>
+                    </div>
+                </form>
+            </div>
+            <div class="party-includes-sticky">
+                <form>
+                    <h2>Your party includes</h2>
                     <div class="text-wrapper">
                         <div class="text">
                             <p>Venue</p>
@@ -304,9 +358,11 @@
         <!-- endbuild -->
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
-        <script src="scripts/wai-nav.js"></script>
         <script src="scripts/stars.js"></script>
         <script src="scripts/flickity.js"></script>
+        <!-- Custom js -->
+        <script src="scripts/wai-nav.js"></script>
+        <script src="scripts/sidebar.js"></script>
         <!-- <script src="scripts/carousel.js"></script> -->
         <!-- endbuild -->
         <script>
@@ -315,11 +371,6 @@
                 var $nav = $(".wai-nav");
                 $nav.toggleClass('nav-scrolled nav-scrolled-green', $(this).scrollTop() > $nav.height());
             });
-
-            // $(document).scroll(function () {
-            //     var $partyDiv = $('.party-includes');
-            //     $partyDiv.toggleClass('party-includes-fixed', $(this).scrollTop() > $partyDiv.height());
-            // });
         });
         </script>
     </body>

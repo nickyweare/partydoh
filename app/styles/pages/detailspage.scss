@@ -28,47 +28,6 @@ section.detailspage-main {
 			}
 		}
 	}
-	.party-includes {
-		background-color: $purple;
-		flex: 1;
-		padding: 40px;
-		h2 {
-			color: white;
-			font-size: 30px;
-			font-weight: 300;
-			margin-bottom: 40px;
-		}
-		.text-wrapper {
-			border-top: 1px solid white;
-			padding-top: 20px;
-			.text {
-				display: flex;
-				font-family: 'lato', sans-serif !important;
-				justify-content: space-between;
-				&.total {
-					justify-content: flex-end;
-				}
-				.edit-wrapper {
-					align-items: flex-start;
-					display: flex;
-					flex-wrap: wrap;
-				}
-				p {
-					color: white;
-					display: flex;
-					font-size: 15px;
-					font-weight: 300;
-					&.bold {
-						font-weight: 600;
-						&.large {
-							font-size: 30px;
-							margin-bottom: 0;	
-						}
-					}
-				}
-			}
-		}
-	}
 	.party-includes-fixed {
 		position: fixed;
 		top: 0;

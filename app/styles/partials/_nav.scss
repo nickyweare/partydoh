@@ -12,7 +12,7 @@ nav.wai-nav {
     font-family: 'ceragr-blackuploaded_file';
     text-transform: uppercase;
     font-size: 0.8rem;
-    transition: background-color 200ms ease;
+    @include transition (all 200ms ease);
     &.wai-nav-green {
     	background: $green;
     }
@@ -99,4 +99,8 @@ nav.wai-nav {
 	&.nav-scrolled-yellow {
 		background-color: $yellow;
 	}
+}
+
+.nav-hide {
+	opacity: 0;
 }
