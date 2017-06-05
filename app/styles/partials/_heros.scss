@@ -42,7 +42,7 @@ section.hero {
             }
         }
     }
-    &.packpage-hero {
+    &.packagepage-hero {
         background: url(../../images/hero-packpage.png) center center fixed;
         background-size: cover;
         margin-bottom: 0;
@@ -80,7 +80,7 @@ section.hero {
             }
         }
     }
-    &.createparty-hero {
+    &.buildpage-hero {
         background: url(../../images/hero-build.png) center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -98,7 +98,7 @@ section.hero {
             }
         }
     }
-    &.detailspage-hero {
+    &.summarypage-hero {
         background: url(../../images/hero-build.png) center center fixed;
         height: 30vh;
         background-repeat: no-repeat;
@@ -108,7 +108,7 @@ section.hero {
             background-size: cover;
         }   
     }
-    &.entertainers-hero {
+    &.entertainerspage-hero {
         background: url(../../images/entertainer-hero.png) center center fixed;
         background-size: cover;
         height: 100%;
@@ -157,6 +157,17 @@ section.hero {
     }
     &.thankyoupage-hero {
         background: url(../../images/hero-packpage.png) center center fixed;
+        // background-position: relative;
+        height: 30vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include media-breakpoint-down(sm) {
+            background: url(../../images/hero-packpage.png) center center;
+            background-size: cover;
+        }   
+    }
+    &.includespage-hero {
+        background: url(../../images/hero-packpage.png) center bottom;
         // background-position: relative;
         height: 30vh;
         background-repeat: no-repeat;

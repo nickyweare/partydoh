@@ -42,6 +42,13 @@ button.wai-btn {
 	        width: 100%;       
 	    }
 	}
+	&.cms-btn {
+		width: 100%;
+		margin-bottom: 20px;
+		&.cms-btn-white {
+			border: 3px solid white;
+		}
+	}
 	&:hover {
 		transition: all 200ms ease;
 		background: darken($purple, 10%);

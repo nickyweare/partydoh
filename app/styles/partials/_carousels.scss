@@ -65,23 +65,25 @@
 	}
 	&.reviews-carousel {
 		.carousel-cell {
-			width: 475px;
-			@include media-breakpoint-down(sm) {
+			width: 100%;
+		    @include media-breakpoint-down(xs) {
+				width: 300px;
+				margin-right: 25px;
 		    }
-			.content-wrap {
-	    		display: flex;
-		    	.image {
-		    		flex: 1;
-		    		img.img-circle {
-		    			border-radius: 50px;
-		    			height: 75px;
-		    			width: 75px;
-		    		}
-		    	}
-		    	.text {
-		    		flex: 2;
-		    	}
-			}
+	    	.image-wrapper {
+	    		align-items: center;
+	  			display: flex;
+	  			margin-bottom: 20px;
+	    		img.img-circle {
+	    			border-radius: 50px;
+	    			height: 75px;
+	    			margin-bottom: 0;
+	    			width: 75px;
+	    		}
+	    		.star-wrapper {
+					margin-left: 20px;
+	    		}
+	    	}
 		}
 	}
 }

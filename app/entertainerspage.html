@@ -45,7 +45,7 @@
             </div>
         </nav>
         <!-- Hero section -->
-        <section class="hero packpage-hero createparty-hero entertainers-hero">
+        <section class="hero packagepage-hero buildpage-hero entertainerspage-hero">
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-text-wrapper">
@@ -82,57 +82,51 @@
                 <button class="btn-text wai-btn entertainers-btn">add to your party</button>
                 <div class="customer-reviews">
                     <h1>Customer reviews</h1>
-                    <div class="carousel party-packages-carousel reviews-carousel" data-flickity='{ "groupCells": true, "pageDots": false, "contain": false }'>
+                    <div class="carousel party-packages-carousel reviews-carousel" data-flickity='{ "groupCells": false, "pageDots": false, "contain": true }'>
                         <div class="carousel-cell">
-                            <div class="content-wrap">
-                                <div class="image">
-                                    <img class="img-circle" src="images/entertainer-hero.png" />
-                                <h2>Jessica</h2>
-                                <div class="star-rating">
-                                    <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
-                                </div>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</p>
+                            <div class="image-wrapper">
+                                <img class="img-circle" src="images/entertainer-hero.png" />
+                                <div class="star-wrapper">
+                                    <h2>Jessica</h2>
+                                    <div class="star-rating">
+                                        <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                                    </div>
                                 </div>
                             </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
                         </div>
                         <div class="carousel-cell">
-                            <div class="content-wrap">
-                                <div class="image">
-                                    <img class="img-circle" src="images/entertainer-hero.png" />
-                                <h2>Jessica</h2>
-                                <div class="star-rating">
-                                    <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
-                                </div>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</p>
+                            <div class="image-wrapper">
+                                <img class="img-circle" src="images/entertainer-hero.png" />
+                                <div class="star-wrapper">
+                                    <h2>Jessica</h2>
+                                    <div class="star-rating">
+                                        <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                                    </div>
                                 </div>
                             </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
                         </div>
                         <div class="carousel-cell">
-                            <div class="content-wrap">
-                                <div class="image">
-                                    <img class="img-circle" src="images/entertainer-hero.png" />
-                                <h2>Jessica</h2>
-                                <div class="star-rating">
-                                    <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
-                                </div>
-                                </div>
-                                <div class="text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat.</p>
+                            <div class="image-wrapper">
+                                <img class="img-circle" src="images/entertainer-hero.png" />
+                                <div class="star-wrapper">
+                                    <h2>Jessica</h2>
+                                    <div class="star-rating">
+                                        <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
+                                    </div>
                                 </div>
                             </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
                         </div>
                     </div>
                 </div>
@@ -235,7 +229,7 @@
         $(function () {
             $(document).scroll(function () {
                 var $nav = $(".wai-nav");
-                $nav.toggleClass('nav-scrolled nav-scrolled-green nav-scrolled-yellow', $(this).scrollTop() > $nav.height());
+                $nav.toggleClass('nav-scrolled', $(this).scrollTop() > $nav.height());
             });
         });
         </script>

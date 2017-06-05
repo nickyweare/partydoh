@@ -15,8 +15,9 @@ section.packpage-main {
 		}
 		.images {
 			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
+			@include media-breakpoint-down(xs) {
+				flex-direction: column;
+			}
 			h2 {
 				color: $pink;
 				font-family: 'ceragr-blackuploaded_file';
@@ -25,21 +26,16 @@ section.packpage-main {
 				letter-spacing: 1px;
 			}
 			.item {
-				flex-direction: column;
-				margin-bottom: 20px;
+				margin: 0 25px 20px 0;
+				&:last-child {
+					margin-right: 0;
+				}
 				img {
-					display: flex;
-					height: 200px;
 					margin-bottom: 20px;
-					@include media-breakpoint-down(lg) {
-		                height: 175px;
-		            }
-		            @include media-breakpoint-down(md) {
-		                height: 150px;
-		            }
-		            @include media-breakpoint-down(sm) {
-		                width: 100%;
-		            }
+					width: 100%;
+				}
+				@include media-breakpoint-down(xs) {
+					margin-right: 0;
 				}
 			}
 		}

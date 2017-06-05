@@ -45,7 +45,7 @@
             </div>
         </nav>
         <!-- Hero section -->
-        <section class="hero packpage-hero createparty-hero detailspage-hero">
+        <section class="hero packagepage-hero buildpage-hero summarypage-hero">
             
         </section>
         <!-- Package detail -->
@@ -282,7 +282,7 @@
         $(function () {
         $(document).scroll(function () {
         var $nav = $(".wai-nav");
-        $nav.toggleClass('nav-scrolled nav-scrolled-green nav-scrolled-yellow', $(this).scrollTop() > $nav.height());
+        $nav.toggleClass('nav-scrolled', $(this).scrollTop() > $nav.height());
             });
         });
         </script>
