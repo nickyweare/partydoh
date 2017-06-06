@@ -88,6 +88,9 @@ form.booking-form {
 			}
 		}
 	}
+	&.block-input {
+		background: none;
+	}
 	@include media-breakpoint-down(sm) {
 		padding: 30px;
         width: 100%;         

@@ -21,6 +21,15 @@
 			&.total {
 				justify-content: flex-end;
 			}
+			&.guest-text {
+				align-items: baseline;
+				margin-bottom: 20px;
+				justify-content: flex-start;
+				p {
+					margin-bottom: 0;
+					margin-left: 5px;
+				}
+			}
 			.checkbox {
 				display: flex;
 				align-items: baseline;
@@ -39,7 +48,7 @@
 			p {
 				color: white;
 				display: flex;
-				font-size: 15px;
+				// font-size: 15px;
 				font-weight: 300;
 				&.bold {
 					font-weight: 600;

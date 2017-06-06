@@ -26,6 +26,8 @@ section.packpage-main {
 				letter-spacing: 1px;
 			}
 			.item {
+				flex-basis: 0;
+				flex-grow: 1;
 				margin: 0 25px 20px 0;
 				&:last-child {
 					margin-right: 0;
