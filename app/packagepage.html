@@ -52,7 +52,7 @@
                         <h1 class="hero">heroes!</h1>
                         <p>the perfect party for kids with super powers</p>
                     </div>
-                    <form class="booking-form">
+                    <form class="booking-form" action="summarypage.html">
                         <h1>book your party now</h1>
                         <div class="booking-form-group">
                             <div class="select-wrapper">
@@ -192,6 +192,10 @@
             <!-- Purple block -->
             <div class="party-includes">
                 <form>
+                    <div class="exit">
+                      <span class="icon-cross-circle"></span> 
+                      <p>close</p> 
+                    </div>
                     <h2>Your party includes</h2>
                     <div class="text-wrapper">
                         <div class="text">
@@ -244,8 +248,9 @@
                     </div>
                 </form>
             </div>
+            <!-- Sticky sidebar -->
             <div class="party-includes-sticky">
-                <form>
+                <form action="summarypage.html">
                     <h2>Your party includes</h2>
                     <div class="text-wrapper">
                         <div class="text">
@@ -327,6 +332,11 @@
                 </div>
             </div>
         </footer>
+
+        <div class="cart">
+            <img src="images/cart-purple.svg" width="70px" />
+        </div>
+
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
@@ -365,6 +375,7 @@
         <!-- Custom js -->
         <script src="scripts/wai-nav.js"></script>
         <script src="scripts/sidebar.js"></script>
+        <script src="scripts/cart.js"></script>
         <!-- <script src="scripts/carousel.js"></script> -->
         <!-- endbuild -->
         <script>

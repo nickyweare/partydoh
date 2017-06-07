@@ -22,6 +22,7 @@ nav.wai-nav {
     @include media-breakpoint-down(sm) {
 		display: block;
 		padding: 0;
+		background-color: $pink;
 	}
 	.wai-nav-logo {
 		@include media-breakpoint-down(sm) {
@@ -63,7 +64,7 @@ nav.wai-nav {
 					width: 100%;
 					padding: 25px 40px;
 					font-size: 16px;
-					border-bottom: 1px solid darken($purple, 10%);
+					border-bottom: 1px solid lighten($pink, 14%);
 				}
 				&:hover {
 					text-decoration: none;
@@ -76,7 +77,8 @@ nav.wai-nav {
 		}
 		@include media-breakpoint-down(sm) {
 			display: none;
-			background-color: $purple;
+			background-color: lighten($pink,8%);
+			border-top: 1px solid darken($pink, 8%);
 		}
 	}
 	.wai-nav-icon {
@@ -103,4 +105,7 @@ nav.wai-nav {
 
 .nav-hide {
 	opacity: 0;
+	@include media-breakpoint-down(sm) {
+		opacity: 1;
+	}
 }

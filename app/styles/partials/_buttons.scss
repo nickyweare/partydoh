@@ -14,12 +14,18 @@ button.wai-btn {
 	min-width: 200px;
 	&.wai-btn-pink {
 		background-color: $pink;
+		&:hover {
+			transition: all 200ms ease;
+			background: darken($pink, 15%);
+		}
 	}
 	&.wai-btn-white {
 		background-color: white;
 		border: 3px solid $purple;
 		color: $purple;
-
+		&:hover {
+			color: white;
+		}
 	}
 	&.wai-btn-mini {
 		border: 2px solid white; 

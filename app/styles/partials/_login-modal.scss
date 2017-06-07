@@ -1,14 +1,12 @@
 .login-modal {
     display: none;
-    // opacity: 0.9;
-    position: absolute;
     height: 100%;
     width: 100%;
+    position: fixed;
     top: 0;
     left: 0;
-    // z-index: 1000;
+    z-index: 9999;
     &.login-modal:target {
-    /** Show lightbox when it is target */
         display: block;
         outline: none;
     }
@@ -17,29 +15,31 @@
         min-width:100%;
         min-height: 100%;
         margin: 0 auto;
-        padding:200px 300px;
-        z-index: 5000;
+        padding:200px 350px;
+        // z-index: 5000;
+        @include media-breakpoint-down(lg) {
+            padding: 200px 300px;
+        }
+        @include media-breakpoint-down(md) {
+            padding: 200px 200px;
+        }
         @include media-breakpoint-down(sm) {
-            padding: 90px 30px;
-        } 
+            padding: 50px 20px;
+        }  
         a.close {
-            display:block;
-            font-size:12px;
-            text-decoration:none;
+            display: block;
+            font-size: 12px;
+            text-decoration: none;
         }
         .content {
             display: flex;
             justify-content: center;
             margin: auto;
-            opacity: 1;
-            z-index: 9000;
             form {
                 display: flex;
                 flex-direction: column;
                 margin: auto;
-                opacity: 1;
                 padding: 40px;
-                z-index: 9999;
                 h3 {
                     text-align: center;
                 }
@@ -47,8 +47,11 @@
             .button-wrapper {
                 display: flex;
                 button {
-                    flex-grow: 1;
+                    flex-basis: 49%;
                 }
+                @include media-breakpoint-down(md) {
+                    flex-basis: 46%;
+                } 
                 @include media-breakpoint-down(sm) {
                     flex-direction: column;
                 } 

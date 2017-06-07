@@ -55,9 +55,9 @@
                 <div class="details-pay-invite">
                     <p>Details</p>
                     <p class="muted"><span class="icon-chevron-right"></span>Payment</p>
-                    <p class="muted"><span class="icon-chevron-right"></span>Creative invitations</p>
+                    <p class="muted"><span class="icon-chevron-right"></span>Send invitations</p>
                 </div>
-                <form class="booking-form details-form">
+                <form class="booking-form details-form" action="thankyoupage.html">
                     <div class="booking-form-group details-form-group form-group-extra">
                         <div class="select-wrapper select-row left">
                             <input type="input" name="name" placeholder="Name of child">
@@ -89,6 +89,10 @@
             <!-- Purple block -->
             <div class="party-includes">
                 <form>
+                    <div class="exit">
+                        <span class="icon-cross-circle"></span> 
+                        <p>close</p> 
+                    </div>
                     <h2>Your party includes</h2>
                     <div class="text-wrapper">
                         <div class="text">
@@ -148,6 +152,7 @@
                     </div>
                 </form>
             </div>
+            <!-- Sticky sidebar -->
             <div class="party-includes-sticky">
                 <form>
                     <h2>Your party includes</h2>
@@ -238,6 +243,11 @@
                 </div>
             </div>
         </footer>
+
+        <div class="cart">
+            <img src="images/cart-purple.svg" width="70px" />
+        </div>
+
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
@@ -276,6 +286,7 @@
         <!-- Custom js -->
         <script src="scripts/wai-nav.js"></script>
         <script src="scripts/sidebar.js"></script>
+        <script src="scripts/cart.js"></script>
         <!-- <script src="scripts/carousel.js"></script> -->
         <!-- endbuild -->
         <script>

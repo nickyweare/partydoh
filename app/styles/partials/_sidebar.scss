@@ -3,13 +3,24 @@
 	padding: 40px;
 	width: 400px;
 	@include media-breakpoint-down(sm) {
-        width: 100%;
-    }   
+        position: fixed;
+		top: 0;
+		bottom: 0;
+		right: -300px;
+		height: 100%;
+		width: 300px;
+		padding: 85px 30px 30px 30px;
+		z-index: 1000;
+		overflow-y: scroll;
+    }  
 	h2 {
 		color: white;
 		font-size: 30px;
 		font-weight: 300;
 		margin-bottom: 40px;
+		@include media-breakpoint-down(sm) {
+        	margin-bottom: 25px;
+    	}  
 	}
 	.text-wrapper {
 		border-top: 1px solid white;
@@ -87,5 +98,37 @@
 	opacity: 0;
 	@include media-breakpoint-down(sm) {
         opacity: 100;
+    }
+}
+
+/* Sticky mobile*/
+.sticky-mobile {
+	display: block;
+	width: 0;
+}
+
+.exit {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: white;
+	font-size: 30px;
+	width: 100%;
+	background-color: darken($purple, 5%);
+	padding: 15px;
+	border-bottom: 1px solid darken($purple, 8%);
+	span {
+		margin-right: 8px;
+	}
+	p{
+		text-transform: uppercase;
+		font-size: 13px;
+		margin: 0;
+	}
+	@include media-breakpoint-up(sm) {
+        display: none;
     }
 }
