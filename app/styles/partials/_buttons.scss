@@ -48,6 +48,21 @@ button.wai-btn {
 	        width: 100%;       
 	    }
 	}
+	&.invite-btn {
+		box-shadow: 0 0 20px lighten($black, 70%);
+		min-width: 200px;
+	}
+	&.thankyou-button {
+        min-width: 50px;
+        width: 48%;
+        @include media-breakpoint-down(md) {
+        	flex-wrap: nowrap;
+            margin-bottom: 20px;
+        }
+        @include media-breakpoint-down(sm) {
+        	width: 100%;
+        }  
+    }
 	&.cms-btn {
 		width: 100%;
 		margin-bottom: 20px;

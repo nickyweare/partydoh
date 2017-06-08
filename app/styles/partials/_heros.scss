@@ -169,11 +169,12 @@ section.hero {
         }   
     }
     &.thankyoupage-hero {
-        background: url(../../images/hero-packpage.png) center center fixed;
+        background: url(../../images/hero-packpage.png) center bottom;
         // background-position: relative;
         height: 30vh;
         background-repeat: no-repeat;
         background-size: cover;
+        margin-bottom: 30px;
         @include media-breakpoint-down(sm) {
             background: url(../../images/hero-packpage.png) center center;
             background-size: cover;
