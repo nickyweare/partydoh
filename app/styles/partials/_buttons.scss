@@ -19,6 +19,14 @@ button.wai-btn {
 			background: darken($pink, 15%);
 		}
 	}
+	&.wai-btn-purple {
+		background-color: lighten($purple, 10%);
+		margin-bottom: 0px;
+		&:hover {
+			transition: all 200ms ease;
+			background: darken($purple, 5%);
+		}
+	}
 	&.wai-btn-white {
 		background-color: white;
 		border: 3px solid $purple;
@@ -27,12 +35,19 @@ button.wai-btn {
 			color: white;
 		}
 	}
+	&.wai-btn-edit {
+		border: 3px solid white;
+	}
 	&.wai-btn-mini {
 		border: 2px solid white; 
 		font-size: 7px;
 		margin-left: 6px;
 		min-width: 40px;
 		padding: 3px;
+	}
+	&.carousel-modal-btn {
+		min-width: 125px;
+		padding: 10px;
 	}
 	&.entertainers-btn {
     	// justify-content: flex-start;

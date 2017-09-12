@@ -20,10 +20,22 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- flickety carousel css -->
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        
+        <!-- Date Picker -->
+        <script src="/scripts/jquery-1.7.1.min.js"></script>
+        <!-- jquery.min -->
+        <script src="/scripts/jquery-ui-1.8.18.custom.min.js"></script>
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="/bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
+        <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+        <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+
+        <!--Font Awesome (added because you use icons in your prepend/append)-->
+        <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+        <!-- Inline CSS based on choices in "Settings" tab -->
+        <!-- <style>.bootstrap-iso .form-group button, .bootstrap-iso form input.form-control, .bootstrap-iso form textarea.form-control, .bootstrap-iso form select.form-control, .bootstrap-iso form .form-group-lg input.form-control, .bootstrap-iso form .form-group-lg textarea.form-control, .bootstrap-iso form .form-group-lg select.form-control, .bootstrap-iso form .form-group-sm input.form-control, .bootstrap-iso form .form-group-sm textarea.form-control, .bootstrap-iso form .form-group-sm select.form-control{-webkit-border-radius: 20px;-moz-border-radius: 20px; border-radius: 20px;}.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: #000000}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}.bootstrap-iso form .input-group-addon {color:#555555; background-color: #eeeeee; border-radius: 20px; padding-left:15px}
+        </style> -->
     </head>
     <body>
         <!--[if IE]>
@@ -38,7 +50,7 @@
                 <li><a href="/packpage.html">Build your party</a></li>
                 <li><a href="/createparty.html">Invites</a></li>
                 <li><a href="#!">Contact</a></li>
-                <li><a class="wai-btn-nav" href="#!">Login</a></li>
+                <li><a class="wai-btn-nav" href="#info-modal">Login</a></li>
             </ul>
             <div class="wai-nav-icon">
                 <a href="#!"><img src="images/wai-nav-icon.svg" width="30px" height="30px" /></a>
@@ -95,25 +107,64 @@
         </section>
         <!-- Package detail -->
         <section class="createparty-main">
-            <div class="carousels">
+            <div class="carousels" id="carousel-section">
                 <!-- Venue carousel -->
                 <div class="carousel-wrapper">
-                    <h1>Choose a venue near you</h1>
+                    <h1>Choose a venue near you, or add your own</h1>
                     <div class="carousel party-packages-carousel venues-carousel" data-flickity='{ "groupCells": true, "pageDots": false, "contain": true }'>
                         <div class="carousel-cell">
                             <div class="venue-img-wrapper">
-                                <img src="images/v-1.png" />
-                                <div class="img-content-overlay">
-                                    <p>Day hire</p>
-                                    <p class="price">£120</p>
+                                <img class="your-venue" src="images/v-1.png" />
+                                <div class="img-content-overlay your-venue">
+                                    <h2>add your own venue</h2>
+                                    <a href="#modal"><span class="icon-plus-circle"></span></a>
                                 </div>
                             </div>
-                            <h2>Alpha Hotel</h2>
-                            <p>145 Shoreditch High Street, London E1 6JE</p>
-                            <div class="star-rating">
-                                <span id="stars-existing" class="starrr star-cust" data-rating='5'></span>
-                                <p>43 Reviews</p>
+                            <h2>your  venue</h2>
+                            <p>Venue address</p>
+                            <!-- Carousel modal -->
+                            <div class="carousel-modal" id="modal">
+                                <div class="box">
+                                    <form>
+                                        <div class="add-wrapper">
+                                            <h1>Add a custom venue</h1>
+                                            <a class="close" href="#carousel-section"><span class="icon-cross"></span></a>
+                                        </div>
+                                        <p>Venue name</p>
+                                        <div class="input-wrapper">
+                                            <input type="text" name="venue" placeholder="Auntie Emma's House">
+                                            <span class="icon-cross"></span>
+                                        </div>
+                                        <p>Postcode</p>
+                                        <div class="input-wrapper">
+                                            <select class="select">
+                                                <option class="option" selected>Postcode</option>
+                                                <option class="option" value="1">W1C 4</option>
+                                                <option class="option" value="2">W1C 5</option>
+                                                <option class="option" value="3">W1C 6</option>
+                                            </select>
+<!--                                             <input type="select" name="postcode" placeholder="W1C 4">
+ -->                                            <span class="icon-cross"></span>
+                                        </div>
+                                        <div class="add-btn">
+                                            <button type="submit" class="wai-btn wai-btn-pink carousel-modal-btn">add</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
+                            <!-- Carousel modal end -->
+                        </div>
+                        <div class="carousel-cell">
+                            <div class="venue-img-wrapper">
+                                <div class="party-doh-image-wrapper">
+                                    <img src="images/v-1.png" />
+                                </div>
+                                <div class="img-content-overlay logo-overlay">
+                                    <img src="images/partydoh-logo.svg"/>
+                                </div>
+                            </div>
+                            <h2>auntie emma's house</h2>
+                            <p>41 Hollyrood Road, London</p>
                         </div>
                         <div class="carousel-cell">
                             <div class="venue-img-wrapper">
@@ -550,6 +601,76 @@
                     <p>close</p> 
                 </div>
                 <h2>Your party includes</h2>
+                <div class=" text-wrapper custom-party">
+                    <div class="text">
+                        <p><span class="icon-calendar-full"></span>Date</p>
+                        <p class="bold">4th September 2017</p>
+                    </div>
+                    <div class="text">
+                        <p><span class="icon-clock"></span>Start time</p>
+                        <p class="bold">10am</p>
+                    </div>
+                    <div class="text">
+                        <p><span class="icon-baby"></span>No. of guests</p>
+                        <p class="bold">12</p>
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <p>Jazz Cafe</p>
+                        <p class="bold">£78</p>
+                    </div>
+                    <div class="text">
+                        <p>Sweet Treats</p>
+                        <p class="bold">£100</p>
+                    </div>
+                    <div class="text">
+                        <p>Dr Wizz-Bang</p>
+                        <p class="bold">£50</p>
+                    </div>
+                </div>
+                <div class="text-wrapper custom-btn">
+                    <div class="text">
+                        <button type="submit" class="btn-text wai-btn wai-btn-purple">edit</button>
+                    </div>
+                </div>
+                <!-- Sidebar top modal -->
+                <div class="party-includes-modal top-includes-modal" id="sticky-includes-modal">
+                    <div class=" text-wrapper custom-party">
+                        <form class="sticky-block-form">
+                            <div class="input-wrapper">
+                                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+                                <span class="icon-calendar-full cal-pos"></span>
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="number" name="number" placeholder="1-10">
+                                <span class="icon-clock"></span>
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="number" name="number" placeholder="1-10">
+                                <span class="icon-baby"></span>
+                            </div>
+                        </form>
+                        <hr>
+                        <div class="text">
+                            <p>Jazz Cafe</p>
+                            <p class="bold">£78</p>
+                        </div>
+                        <div class="text">
+                            <p>Sweet Treats</p>
+                            <p class="bold">£100</p>
+                        </div>
+                        <div class="text">
+                            <p>Dr Wizz-Bang</p>
+                            <p class="bold">£50</p>
+                        </div>
+                    </div>
+                    <!-- End -->
+                    <div class="text-wrapper custom-btn">
+                        <div class="text">
+                            <button type="submit" href="#includes-sticky" class="btn-text wai-btn wai-btn-white wai-btn-edit finish">finish editing</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="text-wrapper">
                     <div class="text">
                         <p>Custom invites</p>
@@ -557,11 +678,108 @@
                     </div>
                 </div>
                 <div class="text-wrapper">
-                    <button type="submit" name="customize" class="btn-text wai-btn wai-btn-pink">customize party</button>
+                    <div class="text">
+                        <p>Management Fee</p>
+                        <p class="bold">was £299</p>
+                    </div>
+                    <div class="text">
+                        <p><span class="icon-gift"></span>Birthday Discount</p>
+                        <p class="">- £200</p>
+                    </div>
+                    <div class="text right">
+                        <p class="bold">NOW £99</p>
+                    </div>
+                </div>
+                <div class="text-wrapper">
+                    <div class="text right">
+                        <p class="bold">£327.00</p>
+                    </div>
+                    <div class="text right">
+                        <p class="">Total Price</p>
+                    </div>
+                </div>
+                <div class="text-wrapper btn-wrapper">
+                    <button type="submit" class="btn-text wai-btn wai-btn-pink">book your party</button>
                 </div>
             </div>
-            <div class="party-includes-sticky">
+            <!-- Sticky Block -->
+            <div class="party-includes-sticky" id="includes-sticky">
                 <h2>Your party includes</h2>
+                <div class=" text-wrapper custom-party">
+                        <div class="text">
+                        <p><span class="icon-calendar-full"></span>Date</p>
+                        <p class="bold">4th September 2017</p>
+                    </div>
+                    <div class="text">
+                        <p><span class="icon-clock"></span>Start time</p>
+                        <p class="bold">10am</p>
+                    </div>
+                    <div class="text">
+                        <p><span class="icon-baby"></span>No. of guests</p>
+                        <p class="bold">12</p>
+                    </div>
+                    <hr>
+                    <div class="text">
+                        <p>Jazz Cafe</p>
+                        <p class="bold">£78</p>
+                    </div>
+                    <div class="text">
+                        <p>Sweet Treats</p>
+                        <p class="bold">£100</p>
+                    </div>
+                    <div class="text">
+                        <p>Dr Wizz-Bang</p>
+                        <p class="bold">£50</p>
+                    </div>
+                </div>
+                <div class="text-wrapper custom-btn">
+                    <div class="text">
+                        <button type="submit" href="#sticky-includes-modal" class="btn-text wai-btn wai-btn-purple">edit</button>
+                    </div>
+                </div>
+                <!-- Editing block -->
+                <div class="party-includes-modal" id="sticky-includes-modal">
+                    <div class=" text-wrapper custom-party">
+                        <form class="sticky-block-form">
+                            <div class="input-wrapper">
+                                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+                                <span class="icon-calendar-full cal-pos"></span>
+                            </div>
+                            <div class="input-wrapper">
+                                <select type="time" name="time">
+                                   <option selected="time"></option>
+                                   <option value="11am">11am</option>
+                                   <option value="12pm">12pm</option>
+                                   <option value="1pm">1pm</option>
+                                   <option value="2pm">2pm</option>
+                                </select>
+                                <span class="icon-clock"></span>
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="number" name="number" placeholder="1-10">
+                                <span class="icon-baby"></span>
+                            </div>
+                        </form>
+                        <hr>
+                        <div class="text">
+                            <p>Jazz Cafe</p>
+                            <p class="bold">£78</p>
+                        </div>
+                        <div class="text">
+                            <p>Sweet Treats</p>
+                            <p class="bold">£100</p>
+                        </div>
+                        <div class="text">
+                            <p>Dr Wizz-Bang</p>
+                            <p class="bold">£50</p>
+                        </div>
+                    </div>
+                    <div class="text-wrapper custom-btn">
+                        <div class="text">
+                            <button type="submit" href="#includes-sticky" class="btn-text wai-btn wai-btn-white wai-btn-edit finish">finish editing</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="text-wrapper">
                     <div class="text">
                         <p>Custom invites</p>
@@ -569,7 +787,28 @@
                     </div>
                 </div>
                 <div class="text-wrapper">
-                    <button type="submit" name="customize" class="btn-text wai-btn wai-btn-pink">customize party</button>
+                    <div class="text">
+                        <p>Management Fee</p>
+                        <p class="bold">was £299</p>
+                    </div>
+                    <div class="text">
+                        <p><span class="icon-gift"></span>Birthday Discount</p>
+                        <p class="">- £200</p>
+                    </div>
+                    <div class="text right">
+                        <p class="bold">NOW £99</p>
+                    </div>
+                </div>
+                <div class="text-wrapper">
+                    <div class="text right">
+                        <p class="bold">£327.00</p>
+                    </div>
+                    <div class="text right">
+                        <p class="">Total Price</p>
+                    </div>
+                </div>
+                <div class="text-wrapper btn-wrapper">
+                    <button type="submit" class="btn-text wai-btn wai-btn-pink">book your party</button>
                 </div>
             </div>
         </section>
@@ -601,6 +840,46 @@
                 </div>
             </div>
         </footer>
+        <!-- Login modal -->
+        <div class="login-modal" id="info-modal">
+            <div class="box info-box">
+                <div class="content">
+                    <form class="booking-form details-form" action="includespage.html">
+                        <a class="close" href="#"><span class="icon-cross"></span></a>
+                        <h3>We need some information...</h3>
+                        <div class="booking-form-group">
+                            <div class="select-wrapper">
+                                <input type="text" name="postcode" placeholder="Postcode">
+                                <span class="icon-magnifier"></span>
+                            </div>
+                        </div>
+                        <div class="booking-form-group">
+                            <div class="select-wrapper">
+                                <input type="input" name="email" placeholder="Date of party">
+                            </div>
+                        </div>
+                        <div class="booking-form-group">
+                            <div class="select-wrapper">
+                                <input type="number" name="email" placeholder="Number of guests">
+                            </div>
+                        </div>
+                        <div class="booking-form-group">
+                            <div class="select-wrapper select-row select-short left">
+                                <input type="date" name="date" placeholder="Date">
+                                <span class="icon-chevron-down"></span>
+                            </div>
+                            <div class="select-wrapper select-row select-short right">
+                                <input type="time" name="time" placeholder="Time">
+                                <span class="icon-chevron-down"></span>
+                            </div>
+                        </div>
+                        <div class="button-wrapper">
+                            <button class="wai-btn details-btn">login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
         <div class="cart">
             <img src="images/cart-purple.svg" width="70px" />
@@ -647,6 +926,26 @@
         <script src="scripts/cart.js"></script>
         <!-- <script src="scripts/carousel.js"></script> -->
         <!-- endbuild -->
+        <!-- Extra JavaScript/CSS added manually in "Settings" tab -->
+        <!-- Include jQuery -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <!-- Include Date Range Picker -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+        <script>
+            $(document).ready(function(){
+                var date_input=$('input[name="date"]'); //our date input has the name "date"
+                var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+                date_input.datepicker({
+                    format: 'mm/dd/yyyy',
+                    container: container,
+                    todayHighlight: true,
+                    autoclose: true,
+                })
+            })
+        </script>
         <script>
         $(function () {
             $(document).scroll(function () {

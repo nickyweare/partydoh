@@ -26,17 +26,23 @@ form.wai-form {
 			color: lighten($black, 60%);
 			font-size: 14px;
 			height: 100%;
-			@include media-breakpoint-down(sm) {
-                width: 100%;
-            }
+			width: 100%;
+			// @include media-breakpoint-down(sm) {
+   //              width: 100%;
+   //          }
 		}
 		span {
+			color: $pink;
 			position: absolute;
 			right: 20px;
 			top: 18px;
 			font-size: 20px;
+			margin-left: 5px;
+			@include media-breakpoint-down(md) {
+                top: 15px;
+            }
 			@include media-breakpoint-down(sm) {
-                top: 17px;
+                top: 13px;
             }
 			&.icon-magnifier {
 				color: $pink;
@@ -103,7 +109,7 @@ form.booking-form {
 		margin-bottom: 20px;
 		justify-content: space-between;
 		&.details-form-group {
-			margin-bottom: 12px;
+			margin-bottom: 20px;
 			@include media-breakpoint-down(sm) {
 					flex-direction: column;
 			        width: 100%;         
@@ -130,8 +136,8 @@ form.booking-form {
 				align-items: center;
 				color: lighten($black, 60%);
 				position: absolute;
-				right: 12px;
-				top: 15px;
+				right: 15px;
+				top: 13px;
 				font-size: 14px;
 				&.icon-magnifier {
 					color: $pink;
@@ -198,6 +204,54 @@ form.booking-form {
 				&:first-child {
 					margin-left: 0;
 				}
+			}
+		}
+	}
+}
+form.sticky-block-form {
+	input, select {
+		background-color: $purple;
+		border: 1px solid darken($white, 15%);
+		border-radius: 3px;
+		color: white;
+		font-size: 13px;
+		margin-top: 10px;
+		outline: none;
+		padding: 6px;
+		padding-right: 5px;
+		text-align: right;
+		width: 100%;
+		option {
+			color: $purple;
+			background: white;
+		}
+		&.calendar {
+			margin-top: 0px;
+		}
+		&.form-control {
+			background-color: $purple;
+			text-decoration: none;
+			outline: none;
+		}
+		td.active {
+			background: red;
+		}
+	}
+	input::placeholder {
+		color: white;
+		font-size: 13px;
+		text-align: right;
+	}
+	.input-wrapper {
+		position: relative;
+		span {
+			color: darken($white, 10%);
+			position: absolute;
+			left: 12px;
+			top: 17px;
+			font-size: 18px;
+			&.cal-pos {
+				top: 6px;
 			}
 		}
 	}

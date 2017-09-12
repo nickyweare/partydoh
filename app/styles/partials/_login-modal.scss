@@ -15,8 +15,19 @@
         min-width:100%;
         min-height: 100%;
         margin: 0 auto;
-        padding:200px 350px;
-        // z-index: 5000;
+        padding: 200px 350px;
+        &.info-box {
+            padding: 125px 350px;
+            @include media-breakpoint-down(lg) {
+                padding: 200px 300px;
+            }
+            @include media-breakpoint-down(md) {
+                padding: 200px 200px;
+            }
+            @include media-breakpoint-down(sm) {
+                padding: 50px 20px;
+            }
+        }
         @include media-breakpoint-down(lg) {
             padding: 200px 300px;
         }
@@ -27,8 +38,11 @@
             padding: 50px 20px;
         }  
         a.close {
+            color: $pink;
             display: block;
-            font-size: 12px;
+            font-size: 20px;
+            margin-top: -20px;
+            text-align: right;
             text-decoration: none;
         }
         .content {

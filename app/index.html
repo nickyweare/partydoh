@@ -24,6 +24,15 @@
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="/bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
+        <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+        <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+
+        <!--Font Awesome (added because you use icons in your prepend/append)-->
+        <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+        <!-- Inline CSS based on choices in "Settings" tab -->
+        <!-- <style>.bootstrap-iso .form-group button, .bootstrap-iso form input.form-control, .bootstrap-iso form textarea.form-control, .bootstrap-iso form select.form-control, .bootstrap-iso form .form-group-lg input.form-control, .bootstrap-iso form .form-group-lg textarea.form-control, .bootstrap-iso form .form-group-lg select.form-control, .bootstrap-iso form .form-group-sm input.form-control, .bootstrap-iso form .form-group-sm textarea.form-control, .bootstrap-iso form .form-group-sm select.form-control{-webkit-border-radius: 20px;-moz-border-radius: 20px; border-radius: 20px;}.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: #000000}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}.bootstrap-iso form .input-group-addon {color:#555555; background-color: #eeeeee; border-radius: 20px; padding-left:15px}
+        </style> -->
     </head>
     <body>
         <!--[if IE]>
@@ -54,7 +63,8 @@
                             <span class="icon-magnifier"></span>
                         </div>
                         <div class="wai-form-group">
-                            <input type="date" name="date" placeholder="Date of party">
+                            <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+                            <span class="icon-calendar-full cal-pos"></span>
                         </div>
                         <div class="wai-form-group no-border">
                             <input type="number" name="number" placeholder="Number of guests">
@@ -470,11 +480,12 @@
                 </div>
             </div>
         </footer>
+        <!-- Login modal -->
         <div class="login-modal" id="text">
             <div class="box">
                 <div class="content">
                     <form class="booking-form details-form" action="includespage.html">
-                    <a class="close" href="#">x</a>
+                    <a class="close" href="#"><span class="icon-cross"></span></a>
                         <h3>Login to your account</h3>
                         <div class="booking-form-group">
                             <div class="select-wrapper">
@@ -533,6 +544,22 @@
         <script src="scripts/flickity.js"></script>
         <!-- <script src="scripts/carousel.js"></script> -->
         <!-- endbuild -->
+        <!-- Include Date Range Picker -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+        <script>
+            $(document).ready(function(){
+                var date_input=$('input[name="date"]'); //our date input has the name "date"
+                var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+                date_input.datepicker({
+                    format: 'mm/dd/yyyy',
+                    container: container,
+                    todayHighlight: true,
+                    autoclose: true,
+                })
+            })
+        </script>
         <script>
             $(function () {
               $(document).scroll(function () {

@@ -1,0 +1,36 @@
+.party-includes-modal {
+	background-color: $purple;
+	// display: none;
+    width: 305px;
+    position: absolute;
+    top: 110px;
+    left: 30;
+    z-index: 9999;
+    &.party-includes-modal:target {
+        display: block;
+        outline: none;
+    }
+    &.top-includes-modal {
+      background-color: $purple;
+        display: none;
+        width: 305px;
+        position: absolute;
+        top: 765px;
+        right: 44px;
+        z-index: 9999;
+        &.party-includes-modal:target {
+            display: block;
+            outline: none;
+        }  
+    }
+    a.finish {
+		display: block;
+		text-decoration: none;
+		outline: none;
+    }
+    input {
+        .form-control {
+            
+        }
+    }
+}

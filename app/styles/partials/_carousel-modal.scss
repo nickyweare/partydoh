@@ -1,0 +1,92 @@
+.carousel-modal {
+	display: none;
+    height: 100%;
+    width: 100%;
+    overflow: auto !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    &.carousel-modal:target {
+        display: block;
+        outline: none;
+    }
+	.box {
+		a.close {
+			display: block;
+			text-decoration: none;
+			span {
+				align-self: baseline;
+				color: lighten($black, 10%);
+				font-size: 19px;
+				text-align: center;
+			}
+		}
+		form {
+			// position: absolute;
+			background-color: white;
+			border: 1px solid lighten($black, 90%);
+			border-radius: 5px;
+			padding: 25px;
+			width: 300px;
+			.add-wrapper {
+				display: flex;
+				// align-items: center;
+				justify-content: space-between;
+				margin-bottom: 5px;
+				h1 {
+					font-size: 20px;
+					margin-bottom: 8px;
+				}
+				// a.close {
+				// 	display: block;
+				// 	text-decoration: none;
+				// 	span {
+				// 		align-self: baseline;
+				// 		color: lighten($black, 60%);
+				// 		font-size: 19px;
+				// 		text-align: center;
+				// 	}
+				// }
+			}
+			p {
+				margin-bottom: 7px;
+			}
+			input, select {
+				appearance: none;
+				background: white;
+				border: 1px solid lighten($black, 85%);
+				border-radius: 5px;
+				font-size: 12px;
+				margin-bottom: 17px;
+				outline: none;
+				padding: 6px;
+				padding-left: 10px;
+				width: 100%;
+				// option:active {
+				// 	background-color: white;
+				// }
+			}
+			input::placeholder {
+				color: $black;
+				font-size: 12px;
+			}
+			.input-wrapper {
+				position: relative;
+				span {
+					// align-items: center;
+					color: lighten($black, 60%);
+					position: absolute;
+					right: 12px;
+					top: 8px;
+					font-size: 18px;
+				}
+			}
+			.add-btn {
+				display: flex;
+				justify-content: flex-end;
+				margin-top: 5px;
+			}
+		}
+	}
+}

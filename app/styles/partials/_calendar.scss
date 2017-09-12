@@ -1,0 +1,85 @@
+// .bootstrap-iso {
+//   .form-group button {
+//     border-radius: 20px;
+//   }
+//   form {
+//     input.form-control, textarea.form-control, select.form-control {
+//       border-radius: 20px;
+//     }
+//     .form-group-lg {
+//       input.form-control, textarea.form-control, select.form-control {
+//         border-radius: 20px;
+//       }
+//     }
+//     .form-group-sm {
+//       input.form-control, textarea.form-control, select.form-control {
+//         border-radius: 20px;
+//       }
+//     }
+//   }
+//   .formden_header {
+//     h2, p {
+//       font-family: Arial, Helvetica, sans-serif;
+//       color: #000000;
+//     }
+//   }
+//   form {
+//     font-family: Arial, Helvetica, sans-serif;
+//     color: #000000;
+//     button {
+//       color: white !important;
+//       &:hover {
+//         color: white !important;
+//       }
+//     }
+//   }
+// }
+
+// .asteriskField {
+//   color: red;
+// }
+
+.bootstrap-iso form .input-group-addon {
+  color: #555555;
+  background-color: #eeeeee;
+  border-radius: 20px;
+  padding-left: 15px;
+  table {
+  tr {
+    th {
+      border-radius: 50px !important;
+    }
+  }
+}
+}
+
+.datepicker {
+  table {
+    th {
+      font-size: 10px;
+      // justify-content: center;
+      text-transform: uppercase;
+      &.prev, &.next {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        justify-content: center;
+      }
+    }
+      td {
+
+        font-size: 10px;
+        &.day {
+          border-radius: 50px;
+        }
+        &.today {
+          background-color: white !important;
+          border-radius: 50px;
+        }
+        &.active {
+          border-radius: 50px;
+          background-color: $purple !important;
+      }
+    }   
+  }
+}
