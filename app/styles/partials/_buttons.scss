@@ -19,6 +19,9 @@ button.wai-btn {
 			background: darken($pink, 15%);
 		}
 	}
+	&.btn-hero {
+		padding: 18px 20px;
+	}
 	&.wai-btn-purple {
 		background-color: lighten($purple, 10%);
 		margin-bottom: 0px;

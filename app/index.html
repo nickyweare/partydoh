@@ -59,18 +59,26 @@
                     <p>create a party to remember</p>
                     <form class="wai-form hero-form" action="buildpage.html">
                         <div class="wai-form-group">
-                            <input type="text" name="postcode" placeholder="Postcode">
+                            <div class="label">Where</div>
+                            <input class="form-control" type="text" name="postcode" placeholder="Postcode">
                             <span class="icon-magnifier"></span>
                         </div>
                         <div class="wai-form-group">
+                            <div class="label">Date</div>
                             <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
                             <span class="icon-calendar-full cal-pos"></span>
                         </div>
-                        <div class="wai-form-group no-border">
-                            <input type="number" name="number" placeholder="Number of guests">
+                        <div class="wai-form-group">
+                            <div class="label">Time</div>
+                            <input class="form-control" id="time" name="time" type="time"/>
+                            <span class="icon-clock cal-pos"></span>
                         </div>
                         <div class="wai-form-group no-border">
-                            <button type="submit" class="wai-btn"> Create party</button>
+                            <div class="label">Guests</div>
+                            <input class="form-control" type="number" name="number" placeholder="Number of guests">
+                        </div>
+                        <div class="wai-form-group no-border">
+                            <button type="submit" class="wai-btn btn-hero"> Create party</button>
                         </div>
                     </form>
                 </div>
@@ -520,7 +528,7 @@
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="/bower_components/jquery/dist/jquery.js"></script>
-        <script src="/bower_components/tether/dist/js/tether.js"></script>
+        <script src="/bower_components/popper.js/dist/umd/popper.js"></script>
         <script src="/bower_components/modernizr/modernizr.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
